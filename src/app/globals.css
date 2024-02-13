@@ -1,33 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+ 
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: #191E23;
+    --foreground: #ffffff;
+
+    --card: #ffffff;
+    --card-foreground: #e3b948;
+
+    --popover: #2E3236;
+    --popover-foreground: #ffffff;
+
+    --primary: #a3e440;
+    --primary-foreground: #d4c8fa;
+
+    --secondary: #adadad;
+    --secondary-foreground: #2d285b;
+
+    --muted: #dededf;
+    --muted-foreground: #b1d2ec;
+
+    --accent: #dededf;
+    --accent-foreground: #2d285b;
+
+    --destructive: #e6004d;
+    --destructive-foreground: #d4c8fa;
+
+    --border: #dad1e6;
+    --input: #dad1e6;
+    --ring: #e3b948;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #191723;
+    --foreground: #d4c8fa;
+
+    --card: #e3b948;
+    --card-foreground: #d4c8fa;
+
+    --popover: #e3b948;
+    --popover-foreground: #d4c8fa;
+
+    --primary: #d4c8fa;
+    --primary-foreground: #e3b948;
+
+    --secondary: #d9b12b;
+    --secondary-foreground: #d4c8fa;
+
+    --muted: #d9b12b;
+    --muted-foreground: #db1b89;
+
+    --accent: #d9b12b;
+    --accent-foreground: #d4c8fa;
+
+    --destructive: #003e4d;
+    --destructive-foreground: #d4c8fa;
+
+    --border: #d9b12b;
+    --input: #d9b12b;
+    --ring: #d81f6b;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-color: var(--background);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.audiowide-bold {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }

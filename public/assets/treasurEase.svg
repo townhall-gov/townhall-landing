@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icons8_filter_and_sort 1" clip-path="url(#clip0_355_1588)">
+<g id="Group 1000006828">
+<path id="Vector" d="M33.3324 37H15.8535V29.3633H32.1468V10.6367H15.8535V3H33.3324C36.6097 3 39.1725 6.16857 39.1725 10.2121V29.7879C39.1725 33.8314 36.6097 37 33.3324 37Z" fill="url(#paint0_linear_355_1588)"/>
+<path id="Vector_2" d="M17.0026 13.4376V27.4684H7.63667V37H0V3H7.63667V13.4376H17.0026Z" fill="#1573FE"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_355_1588" x1="15.8535" y1="20.0026" x2="39.1725" y2="20.0026" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1573FE"/>
+<stop offset="1" stop-color="#00D39E"/>
+</linearGradient>
+<clipPath id="clip0_355_1588">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
