@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Ecosystem from "@/components/home/Ecosystem";
 import LandingMain from "@/components/home/LandingMain";
 import Solution from "@/components/home/Solution";
 import TrustedBy from "@/components/home/TrustedBy";
@@ -10,6 +11,7 @@ export default function Home() {
        <LandingMain/>
        <TrustedBy />
        <Solution/>
+       <Ecosystem/>
     </main>
   );
 }
