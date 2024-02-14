@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import LandingMain from "@/components/home/LandingMain";
+import Solution from "@/components/home/Solution";
 import TrustedBy from "@/components/home/TrustedBy";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header/>
        <LandingMain/>
        <TrustedBy />
+       <Solution/>
     </main>
   );
 }
