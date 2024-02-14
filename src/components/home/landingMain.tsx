@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 const LandingMain = () => {
 	return (
-		<section className='grid grid-cols-12 justify-between items-center w-full'>
+		<section className='grid grid-cols-12 justify-between items-center px-24 w-full'>
 			<div className='col-span-7 inline-flex flex-col items-start gap-12 relative'>
 				<div className='flex-col items-start gap-8 inline-flex '>
 					<div className='flex-col items-start gap-3 inline-flex '>
