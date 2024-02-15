@@ -3,6 +3,7 @@ import Ecosystem from "@/components/home/Ecosystem";
 import LandingMain from "@/components/home/LandingMain";
 import Roadmap from "@/components/home/Roadmap";
 import Solution from "@/components/home/Solution";
+import Testimony from "@/components/home/Testimony";
 import TrustedBy from "@/components/home/TrustedBy";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
        <Solution/>
        <Ecosystem/>
        <Roadmap/>
+       <Testimony/>
     </main>
   );
 }
