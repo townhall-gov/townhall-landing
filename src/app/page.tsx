@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Ecosystem from "@/components/home/Ecosystem";
+import FAQ from "@/components/home/FAQ";
 import LandingMain from "@/components/home/LandingMain";
 import Roadmap from "@/components/home/Roadmap";
 import Solution from "@/components/home/Solution";
@@ -16,6 +17,7 @@ export default function Home() {
        <Ecosystem/>
        <Roadmap/>
        <Testimony/>
+       <FAQ/>
     </main>
   );
 }
