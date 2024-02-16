@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Ecosystem from "@/components/home/Ecosystem";
 import FAQ from "@/components/home/FAQ";
@@ -18,6 +19,7 @@ export default function Home() {
        <Roadmap/>
        <Testimony/>
        <FAQ/>
+       <Footer/>
     </main>
   );
 }
