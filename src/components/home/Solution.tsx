@@ -32,14 +32,9 @@ const Solution: React.FC = () => {
       <div className="grid relative grid-cols-3 px-24 bg-transparent">
       <div className="col-span-1 border-r">
         <div className="p-4 sticky top-0 ">
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="text-6xl flex flex-col justify-center h-screen font-semibold mb-4"
-          >
+          <h1 className="text-6xl flex flex-col justify-center h-screen font-semibold mb-4">
            One Stop Solution for Governance
-          </motion.h1>
+          </h1>
         </div>
       </div>
 

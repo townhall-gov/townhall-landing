@@ -32,15 +32,18 @@ const Testimony = () => {
 	}, [api])
 
 	useEffect(() => {
-	  console.log('current', current);
 	  if(current === 1){
 		api?.scrollNext()
 	  }
+	  if(current === total +2){
+		api?.scrollPrev()
+	  }
 
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [current])
 
 	const toPrev = () => {
-		if(current > 1) api?.scrollPrev()
+		if(current > 2) api?.scrollPrev()
 	}
 	const toNext = () => {
 		if(current < total +1) api?.scrollNext()

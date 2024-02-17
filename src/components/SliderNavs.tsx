@@ -31,7 +31,7 @@ const SliderNavs = ({
 						whileHover={{ scale: 1.2 }}
 						whileTap={{ scale: 0.8 }}
 						transition={{ duration: 0.2 }}
-						className={` rounded-full ${
+						className={` rounded-full transition-all ${
 							index === active - 1 ? " h-2 w-2 bg-white" : "h-1.5 w-1.5 bg-zinc-700"
 						}`}
 					/>
