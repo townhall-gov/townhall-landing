@@ -12,13 +12,16 @@ import SliderNavs from "../SliderNavs";
 
 const Testimony = () => {
 	const [api, setApi] = useState<CarouselApi>();
-	const [current, setCurrent] = useState(0);
+	const [current, setCurrent] = useState(2);
 	const [count, setCount] = useState(0);
+	const total = 5;
 
 	useEffect(() => {
 		if (!api) {
 			return
 		}
+
+	    
 
 		setCount(api.scrollSnapList().length)
 		setCurrent(api.selectedScrollSnap() + 1)
@@ -27,6 +30,22 @@ const Testimony = () => {
 		})
 
 	}, [api])
+
+	useEffect(() => {
+	  console.log('current', current);
+	  if(current === 1){
+		api?.scrollNext()
+	  }
+
+	}, [current])
+
+	const toPrev = () => {
+		if(current > 1) api?.scrollPrev()
+	}
+	const toNext = () => {
+		if(current < total +1) api?.scrollNext()
+	}
+	
 
 	return (
 		<section className="mt-24 w-full overflow-hidden">
@@ -40,14 +59,20 @@ const Testimony = () => {
 					setApi={setApi}
 				>
 					<CarouselContent>
-						{Array.from({ length: 5 }).map((_, index) => (
-							<CarouselItem key={index} className={`min-w-[800px] p-3 basis-1/3`}>
-									<TestimonyCard active={current -1 === index} />
+					<CarouselItem  className={` min-w-[300px] p-3  opacity-0 basis-1/3`}>
+									
+							</CarouselItem>
+						{Array.from({ length: total }).map((_, index) => (
+							<CarouselItem key={index} className={`${index === current -2  ? "opacity-100" : "opacity-50"} transition-all min-w-[650px] p-3 basis-1/3`}>
+									<TestimonyCard />
 							</CarouselItem>
 						))}
+						<CarouselItem className={` min-w-[300px] opacity-0 p-3 basis-1/3`}>
+									
+							</CarouselItem>
 					</CarouselContent>
 				</Carousel>
-				<SliderNavs active={current - 1} setActive={setCurrent} next={() => api?.scrollNext()} prev={() => api?.scrollPrev()}/>
+				<SliderNavs active={current -1} total={total} next={toNext} prev={toPrev}/>
 			</div>
 		</section>
 	);

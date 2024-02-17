@@ -29,8 +29,8 @@ const items = [
 
 const Solution: React.FC = () => {
   return (
-      <div className="grid relative py-12 grid-cols-3 px-24 bg-transparent">
-      <div className="col-span-1 py-12 border-r">
+      <div className="grid relative grid-cols-3 px-24 bg-transparent">
+      <div className="col-span-1 border-r">
         <div className="p-4 sticky top-0 ">
           <motion.h1
             initial={{ opacity: 0 }}
@@ -43,26 +43,26 @@ const Solution: React.FC = () => {
         </div>
       </div>
 
-      <div className="col-span-2 flex flex-col justify-between p-4 ml-6 h-[300vh]">
+      <div className="col-span-2 flex flex-col justify-between p-4 my-24 ml-6 h-[300vh]">
         {items.map((item, index) => (
           <div key={index} className="mb-8 flex justify-between w-full h-2/4 my-8 items-center">
             <div className="flex-1 mr-24">
-              <h2 className="text-2xl text-destructive font-semibold mb-2">{item.title}</h2>
-              <p className="font-light mb-4">{item.description}</p>
+              <h2 className="text-4xl text-destructive font-semibold mb-2">{item.title}</h2>
+              <p className="font-lg mb-4">{item.description}</p>
             </div>
-            <div className="flex-1">
+            <div className="flex-1 relative left-12">
               <Image
                 src={item.image}
                 alt={item.title}
                 className="object-contain"
-                width={200}
+                width={280}
                 height={200}
               />
             </div>
           </div>
         ))}
       </div>
-      <span className='absolute w-full overflow-hidden border-b  bottom-12'/>
+      <span className='absolute w-full overflow-hidden border-b  bottom-0'/>
     </div>
   );
 };

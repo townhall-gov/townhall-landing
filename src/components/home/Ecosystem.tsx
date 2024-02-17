@@ -30,7 +30,7 @@ const Card = ({ cardName }: { cardName: string }) => {
 
 	return (
 		<motion.div
-			className='relative w-[400px] h-[350px] flex flex-col justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden'
+			className='relative w-[350px] h-[300px] flex flex-col justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden'
 			onMouseMove={handleMouseMove}
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
@@ -76,13 +76,13 @@ const Card = ({ cardName }: { cardName: string }) => {
 
 const Ecosystem = () => {
 	return (
-		<section className='mt-12 flex flex-col justify-center items-center gap-8'>
+		<section className='mt-32 flex flex-col justify-center items-center gap-4'>
 			<div className='flex justify-center gap-8 items-center'>
 				<Card cardName='townhall-white' />
 				<Card cardName='bountybird' />
 				<Card cardName='treasurease' />
 			</div>
-			<h1 className='text-6xl font-semibold mt-8'>Our Growing Ecosystem</h1>
+			<h1 className='text-6xl font-semibold mt-8 mb-4'>Our Growing Ecosystem</h1>
 			<Button size='lg'>
 				Explore{" "}
 				<Image

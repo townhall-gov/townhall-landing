@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-const TestimonyCard = ({ active }: { active: boolean }) => {
+const TestimonyCard = () => {
 	return (
-		<div className={`p-8 bg-[#ffffff18] rounded-3xl ${!active && "backdrop-brightness-50"}`}>
+		<div className='p-8 bg-[#ffffff18] rounded-3xl'>
 			<div className='inline-flex flex-col items-start gap-[32px]'>
 				<p className="relative  [font-family:'Poppins-Regular',Helvetica] font-normal text-transparent text-base">
 					<span className='text-[#e6e6e6]'>

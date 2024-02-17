@@ -4,17 +4,16 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const SliderNavs = ({
 	active,
-	setActive,
+	total,
 	next,
 	prev
 }: {
 	active: number;
-	setActive: Dispatch<SetStateAction<number>>;
+	total: number;
 	next: () => void;
 	prev: () => void;
 }) => {
 	const [prevActiveIndex, setPrevActiveIndex] = useState(active);
-	const totalCount = 5;
 
 	useEffect(() => {
 		if (prevActiveIndex !== active) {
@@ -25,7 +24,7 @@ const SliderNavs = ({
 	const Dots = () => (
 		<div className='flex justify-center items-center space-x-2'>
 			<AnimatePresence>
-				{[...Array(totalCount)].map((_, index) => (
+				{[...Array(total)].map((_, index) => (
 					<motion.div
 						key={index}
 						layout
@@ -33,7 +32,7 @@ const SliderNavs = ({
 						whileTap={{ scale: 0.8 }}
 						transition={{ duration: 0.2 }}
 						className={` rounded-full ${
-							index === active ? " h-2 w-2 bg-white" : "h-1.5 w-1.5 bg-zinc-700"
+							index === active - 1 ? " h-2 w-2 bg-white" : "h-1.5 w-1.5 bg-zinc-700"
 						}`}
 					/>
 				))}
