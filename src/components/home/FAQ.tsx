@@ -35,7 +35,7 @@ const faqData = [
 const FAQ = () => {
 	return (
 		<div className="w-full p-24 grid grid-cols-3">
-            <h1 className="text-6xl col-span-1">Frequently Asked Questions</h1>
+            <h1 className="text-6xl col-span-1 mr-4">Frequently Asked Questions</h1>
 			<Accordion type='single' collapsible className='w-full col-span-2'>
 				{ faqData.map((item, idx) => <AccordionItem value={`item-${idx}`} key={idx}>
 					<AccordionTrigger>{item.question}</AccordionTrigger>
