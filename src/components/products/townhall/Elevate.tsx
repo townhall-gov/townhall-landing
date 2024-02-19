@@ -2,7 +2,7 @@ import React from "react";
 
 const Elevate = () => {
   return (
-    <div className="flex items-center [font-family:'Poppins-Regular',Helvetica] px-20 mt-24 border-t border-b">
+    <div className="flex items-center [font-family:'Poppins-Regular',Helvetica] px-20 mt-24 border-t border-b w-full">
       <div className="inline-flex flex-col items-start justify-center pl-0 pr-16 ">
         <h4 className=" text-xl leading-[32px] whitespace-nowrap">
           Total Proposals

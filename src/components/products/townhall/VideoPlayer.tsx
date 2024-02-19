@@ -32,7 +32,7 @@ const VideoPlayer: React.FC = () => {
       </video>
 
       <button
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/ p-4 cursor-pointer flex items-center focus:outline-none"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 cursor-pointer flex items-center focus:outline-none"
         onClick={togglePlay}
       >
         {isPlaying ? (

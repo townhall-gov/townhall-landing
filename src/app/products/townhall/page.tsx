@@ -5,6 +5,7 @@ import Banner from "@/components/products/townhall/Banner";
 import Elevate from "@/components/products/townhall/Elevate";
 import VideoPlayer from "@/components/products/townhall/VideoPlayer";
 import Features from "@/components/products/townhall/Features";
+import Difference from "@/components/products/townhall/Difference";
 
 const townhall = () => {
   return (
@@ -14,6 +15,7 @@ const townhall = () => {
       <Elevate/>
       <VideoPlayer/>
       <Features/>
+      <Difference/>
       <Footer />
     </main>
   );
