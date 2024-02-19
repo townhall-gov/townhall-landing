@@ -1,8 +1,10 @@
+import React from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Banner from "@/components/products/townhall/Banner";
 import Elevate from "@/components/products/townhall/Elevate";
-import React from "react";
+import VideoPlayer from "@/components/products/townhall/VideoPlayer";
+import Features from "@/components/products/townhall/Features";
 
 const townhall = () => {
   return (
@@ -10,6 +12,8 @@ const townhall = () => {
       <Header />
       <Banner />
       <Elevate/>
+      <VideoPlayer/>
+      <Features/>
       <Footer />
     </main>
   );
