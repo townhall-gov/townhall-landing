@@ -22,14 +22,14 @@ const Header: React.FC = () => {
 		{
 			key: 1,
 			title: "Townhall",
-			link: "/docs",
+			link: "/products/townhall",
 			logo: "/logo.svg",
 			desc: "Lorem ipsum dolor sit",
 		},
 		{
 			key: 2,
 			title: "BountyBird",
-			link: "/docs",
+			link: "/products/bountybird",
 			logo: "/assets/bountybird.svg",
 			desc: "Lorem ipsum dolor sit",
 		},
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
 					<NavigationMenu>
 						<NavigationMenuList>
 							<NavigationMenuItem>
-								<Link href='/docs' legacyBehavior passHref>
+								<Link href='/' legacyBehavior passHref>
 									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 										HOME
 									</NavigationMenuLink>
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
 									
                     {products.map((item) => (
                       <li key={item.key}>
-                        	<div className='p-2 flex gap-2 rounded-xl hover:bg-[#44474A]'>
+                        	<Link href={item.link} className='p-2 flex gap-2 rounded-xl hover:bg-[#44474A]'>
 												<div className='bg-[#25282b] w-30 p-2 rounded-xl mr-1'>
 													<Image src={item.logo} alt='Logo' width={35} height={20} />
 												</div>
@@ -105,7 +105,7 @@ const Header: React.FC = () => {
 														{item.desc}
 													</div>
 												</div>
-											</div>
+											</Link>
                       </li>
                     ))}
 									</ul>
