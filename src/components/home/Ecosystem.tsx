@@ -50,7 +50,7 @@ const Card = ({ cardName }: { cardName: string }) => {
 			<motion.div
 				initial={{ scale: 0.5 }}
 				animate={{
-					scale: [1, 1.2, 0.5, 0.8, 1],
+					scale: [1, 1.2, 0.5, 0.9, 1],
 					borderRadius: ["100%", "70%", "50%", "66%", "90%"],
 					width: ["320px", "200px", "250px", "280px", "320px"],
 					height: ["320px", "250px", "270px", "150px", "320px"],
