@@ -4,8 +4,8 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="w-full px-24">
-      <div className="w-full flex flex-col items-center relative rounded-3xl h-full">
+    <div className="w-full px-24">    
+      <div className="w-full flex flex-col items-center relative rounded-3xl h-[80vh]">
         <Image
           src="/assets/townhallBanner.png"
           fill
