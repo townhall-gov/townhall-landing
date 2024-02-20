@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Ecosystem from "@/components/home/Ecosystem";
 import FAQ from "@/components/home/FAQ";
-import LandingMain from "@/components/home/LandingMain";
+import LandingMain from "@/components/home/landingMain";
 import Roadmap from "@/components/home/Roadmap";
 import Solution from "@/components/home/Solution";
 import Testimony from "@/components/home/Testimony";
