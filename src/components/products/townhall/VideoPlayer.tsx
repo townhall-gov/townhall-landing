@@ -25,7 +25,7 @@ const VideoPlayer: React.FC = () => {
         ref={videoRef}
         className="w-full min-h-[600px] object-contain"
         controls={true}
-        onClick={togglePlay}
+        // onClick={togglePlay}
       >
         <source src="/assets/townhallVideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -36,7 +36,7 @@ const VideoPlayer: React.FC = () => {
         onClick={togglePlay}
       >
         {isPlaying ? (
-          null
+          <Image className='-mt-12 opacity-0' src="/assets/PlayVideo.svg" alt="Play" width={64} height={64} />
         ) : (
           <Image className='-mt-12' src="/assets/PlayVideo.svg" alt="Play" width={64} height={64} />
         )}
