@@ -112,14 +112,14 @@ const Header: React.FC = () => {
 								</NavigationMenuContent>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
-								<Link href='/docs' legacyBehavior passHref>
+								<Link href='/infrastructure' legacyBehavior passHref>
 									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 										INFRASTRUCTURE
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
-								<Link href='/docs' legacyBehavior passHref>
+								<Link href='/contact' legacyBehavior passHref>
 									<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 										CONTACT
 									</NavigationMenuLink>

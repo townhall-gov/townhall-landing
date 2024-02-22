@@ -1,0 +1,21 @@
+@keyframes floatAround {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(100px, 50px) rotate(90deg) scale(1.2);
+    }
+    50% {
+      transform: translate(0, 100px) rotate(180deg) scale(0.8);
+    }
+    75% {
+      transform: translate(-100px, 50px) rotate(270deg) scale(1.5);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+  }
+
+  .bubbling {
+    animation: floatAround 15s linear infinite;
+  }
