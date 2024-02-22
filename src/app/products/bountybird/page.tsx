@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer'
+import GetStarted from '@/components/GetStarted'
 import Header from '@/components/Header'
 import Banner from '@/components/products/bountybird/Banner'
 import Compete from '@/components/products/bountybird/Compete'
@@ -12,6 +13,7 @@ const bountybird = () => {
     <Banner />
      <Tag/>
      <Compete/>
+     <GetStarted />
     <Footer />
   </main>
   )

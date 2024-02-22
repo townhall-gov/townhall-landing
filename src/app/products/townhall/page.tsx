@@ -6,6 +6,7 @@ import Elevate from "@/components/products/townhall/Elevate";
 import VideoPlayer from "@/components/products/townhall/VideoPlayer";
 import Features from "@/components/products/townhall/Features";
 import Difference from "@/components/products/townhall/Difference";
+import GetStarted from "@/components/GetStarted";
 
 const townhall = () => {
   return (
@@ -16,6 +17,7 @@ const townhall = () => {
       <VideoPlayer/>
       <Features/>
       <Difference/>
+      <GetStarted />
       <Footer />
     </main>
   );

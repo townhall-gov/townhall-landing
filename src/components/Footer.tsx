@@ -5,7 +5,6 @@ import Image from "next/image";
 const Footer = () => {
 	return (
 		<div className='w-full relative'>
-			<GetStarted />
 			<div>
 				<div className='flex  items-end justify-between mt-32  px-24 pb-32'>
 					<div className='flex flex-col items-start gap-2 relative'>

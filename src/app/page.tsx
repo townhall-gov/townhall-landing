@@ -1,12 +1,15 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Ecosystem from "@/components/home/Ecosystem";
-import FAQ from "@/components/home/FAQ";
+import FAQ from "@/components/FAQ";
 import LandingMain from "@/components/home/landingMain";
 import Roadmap from "@/components/home/Roadmap";
 import Solution from "@/components/home/Solution";
 import Testimony from "@/components/home/Testimony";
 import TrustedBy from "@/components/home/TrustedBy";
+import { homeFaq } from "@/services/constants";
+import GetStarted from "@/components/GetStarted";
+
 
 export default function Home() {
   return (
@@ -18,7 +21,8 @@ export default function Home() {
        <Ecosystem/>
        <Roadmap/>
        <Testimony/>
-       <FAQ/>
+      <FAQ faqData={homeFaq} />
+      <GetStarted />
        <Footer/>
     </main>
   );
