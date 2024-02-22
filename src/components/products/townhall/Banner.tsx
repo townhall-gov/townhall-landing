@@ -22,7 +22,7 @@ const Banner = () => {
             ecosystem
           </p>
         </div>
-        <Button size="lg" className="fixed bottom-20 z-20">
+        <Button size="lg" className="fixed bottom-20 audiowide-bold z-20">
           Launch App
         </Button>
       </div>
