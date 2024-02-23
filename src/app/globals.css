@@ -23,7 +23,7 @@
     --secondary-foreground: #2d285b;
 
     --muted: #dededf;
-    --muted-foreground: #b1d2ec;
+    --muted-foreground: #383a41;
 
     --accent: #dededf;
     --accent-foreground: #2d285b;
@@ -36,36 +36,6 @@
     --ring: #e3b948;
 
     --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: #191723;
-    --foreground: #d4c8fa;
-
-    --card: #e3b948;
-    --card-foreground: #d4c8fa;
-
-    --popover: #e3b948;
-    --popover-foreground: #d4c8fa;
-
-    --primary: #d4c8fa;
-    --primary-foreground: #e3b948;
-
-    --secondary: #d9b12b;
-    --secondary-foreground: #d4c8fa;
-
-    --muted: #d9b12b;
-    --muted-foreground: #db1b89;
-
-    --accent: #d9b12b;
-    --accent-foreground: #d4c8fa;
-
-    --destructive: #003e4d;
-    --destructive-foreground: #d4c8fa;
-
-    --border: #d9b12b;
-    --input: #d9b12b;
-    --ring: #d81f6b;
   }
 }
  
