@@ -24,8 +24,8 @@ const LandingMain = () => {
 					</div>
 				</div>
 				<div className='items-center gap-8 inline-flex '>
-					<div className='items-start gap-10 inline-flex '>
-						<div className='items-center gap-3 inline-flex '>
+					<div className='items-start inline-flex divide-x-2 divide-borderLight'>
+						<div className='items-center gap-3 pr-6 inline-flex'>
 								<div className='flex '>
 									<Avatar>
 										<AvatarImage src='/assets/avatar.svg' />
@@ -45,7 +45,7 @@ const LandingMain = () => {
 								</div>
 							</div>
 						</div>
-						<div className='flex-col items-start inline-flex '>
+						<div className='flex-col items-start px-6 inline-flex '>
 							<div className="relative w-fit font-bold text-white text-3xl">
 								50+
 							</div>
@@ -53,7 +53,7 @@ const LandingMain = () => {
 								Proposals
 							</div>
 						</div>
-						<div className='flex-col items-start gap-[2.02px] inline-flex '>
+						<div className='flex-col items-start px-6  inline-flex '>
 							<div className="relative w-fit font-bold text-white text-3xl">
 								10k+
 							</div>
