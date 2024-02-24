@@ -67,3 +67,60 @@ export const oneStopData = [
     },
     
   ];
+
+
+  export const housesList =  [
+    {
+      "ImgSrc": "/assets/blockchain/acala.svg",
+      "Name": "Acala"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/astar.svg",
+      "Name": "Astar"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/bifrost.svg",
+      "Name": "Bifrost"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/centrifuge.svg",
+      "Name": "Centrifuge"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/karura.svg",
+      "Name": "Karura"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/kilt.svg",
+      "Name": "Kilt"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/kusama.svg",
+      "Name": "Kusama"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/moonbase.svg",
+      "Name": "Moonbase"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/moonbeam.svg",
+      "Name": "Moonbeam"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/moonriver.svg",
+      "Name": "Moonriver"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/pendulum.svg",
+      "Name": "Pendulum"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/polkadot.svg",
+      "Name": "Polkadot"
+    },
+    {
+      "ImgSrc": "/assets/blockchain/statemine.svg",
+      "Name": "Statemine"
+    }
+  ]
+  
