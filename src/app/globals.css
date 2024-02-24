@@ -44,9 +44,15 @@
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-snap-type: y proximity;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
-    scroll-behavior: smooth;
+    
   }
 }
 

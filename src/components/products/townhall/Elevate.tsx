@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Elevate = () => {
@@ -29,6 +30,7 @@ const Elevate = () => {
             stronger, more inclusive Web3 community.
           </p>
         </div>
+        <div className="flex text-lg font-semibold items-center gap-2 justify-start self-stretch w-full text-[#FF796A]">Partnered with <Image width={80} height={35} alt='privy' src='/assets/privy.svg' /></div>
       </div>
     </div>
   );

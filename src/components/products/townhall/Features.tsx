@@ -3,32 +3,33 @@ import React from "react";
 
 const Features = () => {
   return (
-    <>
-      <div className="grid w-full grid-cols-9 gap-8 px-24 mt-24">
-        <div className="col-span-5 w-full ">
+    <section className="w-full  px-24 mt-24">
+      <h1 className="text-6xl w-full text-left font-semibold mb-12">
+        Townhall Features
+      </h1>
+      <div className="grid w-full grid-cols-12 gap-12">
+        <div className="col-span-3 w-full ">
           <TownhallCard
             image="/assets/THfeature-1.svg"
             title="Delegation"
             description="Delegate voting power and foster collaboration, allowing community members to represent others and make decisions collectively."
           />
         </div>
-        <div className="col-span-4 w-full">
-          <TownhallCard
-            image="/assets/THfeature-2.svg"
-            title="Sentiment Commenting"
-            description="Gauge community sentiment and enablemore informed and insightful discussions."
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-9 w-full gap-8 px-24 mt-8">
-        <div className="col-span-4 w-full ">
+        <div className="col-span-3 w-full ">
           <TownhallCard
             image="/assets/THfeature-3.svg"
             title="Enable Voting"
             description="Allowing users to express opinions while making decisions like voting by enhancing transparency."
           />
         </div>
-        <div className="col-span-5 w-full">
+        <div className="col-span-3 w-full">
+          <TownhallCard
+            image="/assets/THfeature-2.svg"
+            title="Sentiment  Commenting"
+            description="Gauge community sentiment and enablemore informed and insightful discussions."
+          />
+        </div>
+        <div className="col-span-3 w-full">
           <TownhallCard
             image="/assets/THfeature-4.svg"
             title="Engage Community"
@@ -36,7 +37,7 @@ const Features = () => {
           />
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

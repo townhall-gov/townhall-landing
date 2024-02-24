@@ -6,10 +6,10 @@ const Footer = () => {
 	return (
 		<div className='w-full relative'>
 			<div>
-				<div className='flex  items-end justify-between mt-32  px-24 pb-32'>
-					<div className='flex flex-col items-start gap-2 relative'>
+				<div className='flex  items-start justify-between mt-32  px-24 pb-32'>
+					<div className='flex flex-col items-start gap-4 relative'>
 						<Image width={200} height={35} alt='townhall' src='/logo_full.svg' />
-						<p className="relative self-stretch [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-white text-2xl leading-[normal]">
+						<p className="relative self-stretch [font-family:'Poppins-SemiBold',Helvetica]  text-white text-2xl leading-[normal]">
 							{" "}
 							Ut enim ad minim veniam, <br />
 							quis nostrud exercitation.
@@ -18,12 +18,13 @@ const Footer = () => {
 					<div className='inline-flex items-start gap-16 relative flex-[0_0_auto]'>
 						<div className="flex-col gap-4  [font-family:'Poppins-Regular',Helvetica] inline-flex items-start relative flex-[0_0_auto]">
 							<div className='relative w-fit font-normal text-[#ffffffcc] text-sm tracking-[0.28px] leading-[normal]'>
-								PLATFORM
+								PRODUCTS
 							</div>
 							<div className='inline-flex flex-col leading-[normal] items-start gap-[18px] relative flex-[0_0_auto]'>
-								<p>Plans &amp; Pricing</p>
-								<p>Personal AI Manager</p>
-								<p>AI Business Writer</p>
+								<p>Townhall</p>
+								<p>BountyBird</p>
+								<p>TreasureEase</p>
+								<p>Governance SDKs</p>
 							</div>
 						</div>
 						<div className="flex-col gap-[16px] [font-family:'Poppins-Regular',Helvetica] inline-flex items-start relative flex-[0_0_auto]">
@@ -31,9 +32,9 @@ const Footer = () => {
 								COMPANY
 							</div>
 							<div className='inline-flex flex-col leading-[normal] items-start gap-[18px] relative flex-[0_0_auto]'>
-								<p>Blog</p>
-								<p>Careers</p>
-								<p>News</p>
+								<p>About Us</p>
+								<p>Roadmap</p>
+								<p>Contact Us</p>
 							</div>
 						</div>
 						<div className='flex-col gap-[16px] inline-flex items-start relative flex-[0_0_auto]'>
@@ -50,16 +51,22 @@ const Footer = () => {
 								SOCIALS
 							</div>
 							<div className='flex-col gap-[12px] inline-flex items-start relative flex-[0_0_auto]'>
-								<div className='flex items-center gap-1.5 px-3.5 py-2 relative self-stretch w-full flex-[0_0_auto] rounded-full border border-solid border-[#414349]'>
-									<Image width={20} height={20} alt='twitter' src='/assets/xIcon.svg' />
+								<button className='flex items-center gap-1.5 px-3.5 py-2 relative self-stretch w-full flex-[0_0_auto] rounded-full border border-solid border-[#414349]'>
+									<Image width={18} height={18} alt='twitter' src='/assets/xIcon.svg' />
 									<div className="relative w-fit [font-family:'Poppins-Medium',Helvetica] font-medium text-white text-sm leading-[20px] whitespace-nowrap">
 										Twitter
 									</div>
-								</div>
+								</button>
 								<button className='flex items-center gap-1.5 px-3.5 py-2 relative self-stretch w-full flex-[0_0_auto] rounded-full border border-solid border-[#414349]'>
 									<Image width={20} height={20} alt='discord' src='/assets/Discord.svg' />
 									<div className="relative w-fit [font-family:'Poppins-Medium',Helvetica] font-medium text-white text-sm leading-[20px] whitespace-nowrap">
 										Discord
+									</div>
+								</button>
+								<button className='flex items-center gap-1.5 px-3.5 py-2 relative self-stretch w-full flex-[0_0_auto] rounded-full border border-solid border-[#414349]'>
+									<Image width={20} height={20} alt='discord' src='/assets/telegram.svg' />
+									<div className="relative w-fit [font-family:'Poppins-Medium',Helvetica] font-medium text-white text-sm leading-[20px] whitespace-nowrap">
+										Telegram
 									</div>
 								</button>
 							</div>

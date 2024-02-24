@@ -31,6 +31,9 @@ const Banner = () => {
         <div className="flex gap-4">
             <Image src="/assets/snapshotFull.svg" width={120} height={60} alt="snapshot" />
             <Image src="/assets/discourse.svg" width={120} height={60} alt="snapshot" />
+            <Image src="/assets/safe.svg" width={120} height={60} alt="snapshot" />
+            <Image src="/assets/tally.svg" width={120} height={60} alt="snapshot" />
+            <Image src="/assets/karma.svg" width={120} height={60} alt="snapshot" />
         </div>
       </div>
     </div>
