@@ -7,6 +7,8 @@ import VideoPlayer from "@/components/products/townhall/VideoPlayer";
 import Features from "@/components/products/townhall/Features";
 import Difference from "@/components/products/townhall/Difference";
 import GetStarted from "@/components/GetStarted";
+import Houses from "@/components/products/townhall/Houses";
+import { housesList } from "@/services/constants";
 
 const townhall = () => {
   return (
@@ -16,6 +18,7 @@ const townhall = () => {
       <Elevate/>
       <VideoPlayer/>
       <Features/>
+      <Houses Data={housesList}/>
       <Difference/>
       <GetStarted />
       <Footer />

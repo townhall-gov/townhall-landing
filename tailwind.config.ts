@@ -20,6 +20,7 @@ const config = {
     extend: {
       colors: {
         border: "var(--border)",
+        borderLight: "var(--border-light)",
         input: "var(--input)",
         ring: "var(--ring)",
         background: "var(--background)",

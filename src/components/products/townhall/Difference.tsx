@@ -5,7 +5,7 @@ import "./style.css";
 const Difference = () => {
   
   return (
-    <section className="min-h-full relative w-full m-24 mt-48">
+    <section className="min-h-full relative w-full m-24 ">
       <div className="min-h-[150vh] flex relative flex-col justify-center items-center bg-gradient-to-r from-[#1c1e1f] via-[#305561] to-transparent blur-[25px] backdrop-blur-[23px] w-full h-full"></div>
       <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 w-full">
         <h1 className="text-8xl text-center">
