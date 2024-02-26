@@ -6,7 +6,7 @@ import Customize from '@/components/Infra/Customize'
 import GetInfraStarted from '@/components/Infra/GetStarted'
 import Kit from '@/components/Infra/Kit'
 import Main from '@/components/Infra/Main'
-import Radar from '@/components/Infra/Radar'
+import Radar from '@/components/Infra/Features'
 import { InfraFaq } from '@/services/constants'
 import React from 'react'
 
