@@ -1,3 +1,27 @@
+export const products = [
+  {
+    key: 1,
+    title: "Townhall",
+    link: "/products/townhall",
+    logo: "/logo.svg",
+    desc: "Lorem ipsum dolor sit",
+  },
+  {
+    key: 2,
+    title: "BountyBird",
+    link: "/products/bountybird",
+    logo: "/assets/bountybird.svg",
+    desc: "Lorem ipsum dolor sit",
+  },
+  {
+    key: 3,
+    title: "TreasurEase",
+    link: "/docs",
+    logo: "/assets/treasurEase.svg",
+    desc: "Lorem ipsum dolor sit",
+  },
+];
+
 export const homeFaq = [
     {
         question: 'What is Townhall ?',
