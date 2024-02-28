@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect } from "react";
 import SliderNavs from "@/components/SliderNavs";
 import Image from "next/image";
+import { getActiveBreakpoint } from "@/lib/utils";
 const Houses = ({ Data = [] }: any) => {
   const [FlowDirection, setFlowDirection] = useState(true);
   const [CenterId, setCenterId] = useState(0);
@@ -14,6 +15,8 @@ const Houses = ({ Data = [] }: any) => {
   const [Right1Id, setRight1Id] = useState(1);
   const [Right2Id, setRight2Id] = useState(2);
   const [Right3Id, setRight3Id] = useState(3);
+
+  const currentBp = getActiveBreakpoint();
 
   const updateId = (id: number, direction: number) => {
     if (id === 0 && direction === -1) {
@@ -169,11 +172,11 @@ const Houses = ({ Data = [] }: any) => {
     },
   };
   return (
-    <motion.div className="flex flex-col items-center justify-center p-24 pb-0 w-full">
-      <h1 className="text-5xl font-semibold text-left w-full m-12">
+    <motion.div className="flex flex-col items-center justify-center p-8 lg:p-24 pb-0 w-full overflow-hidden">
+      <h1 className="text-5xl font-semibold text-center lg:text-left w-full m-12">
         Houses On Townhall
       </h1>
-      <motion.div className="relative size-72">
+      <motion.div className="relative size-40 lg:size-72">
         <AnimatePresence initial={false}>
           <motion.div
             key={Left3Id}
@@ -181,7 +184,7 @@ const Houses = ({ Data = [] }: any) => {
             initial={FlowDirection ? "center" : "leftHidden"}
             animate="left3"
             exit={"leftHidden"}
-            className="absolute size-72 bg-center bg-cover bg-no-repeat rounded-full"
+            className="absolute size-40 lg:size-72 bg-center bg-cover -right-44 lg:right-auto bg-no-repeat rounded-full"
           ></motion.div>
           <motion.div
             key={Left2Id}
@@ -189,7 +192,7 @@ const Houses = ({ Data = [] }: any) => {
             initial={FlowDirection ? "center" : "leftHidden"}
             animate="left2"
             exit={"leftHidden"}
-            className="absolute size-72 bg-center bg-cover bg-no-repeat rounded-full"
+            className="absolute size-40 lg:size-72 bg-center bg-cover -right-36 lg:right-auto bg-no-repeat rounded-full"
           ></motion.div>
           <motion.div
             key={Left1Id}
@@ -197,14 +200,14 @@ const Houses = ({ Data = [] }: any) => {
             initial={FlowDirection ? "center" : "leftHidden"}
             animate="left1"
             exit={"leftHidden"}
-            className="absolute size-72 bg-center bg-cover bg-no-repeat rounded-full"
+            className="absolute size-40 lg:size-72 bg-center bg-cover -right-16 lg:right-auto bg-no-repeat rounded-full"
           ></motion.div>
           <motion.div
             variants={variants}
             key={CenterId}
             initial={FlowDirection ? "right" : "left"}
             animate="center"
-            className="absolute size-72 bg-center bg-cover bg-no-repeat rounded-full"
+            className="absolute size-40 lg:size-72 bg-center bg-cover bg-no-repeat rounded-full"
           ></motion.div>
           <motion.div
             key={Right1Id}
@@ -212,7 +215,7 @@ const Houses = ({ Data = [] }: any) => {
             initial={FlowDirection ? "rightHidden" : "center"}
             animate="right1"
             exit={"rightHidden"}
-            className="absolute size-72 bg-center text-right bg-cover bg-no-repeat rounded-full"
+            className="absolute size-40 lg:size-72 bg-center text-right bg-cover right-16 lg:right-auto bg-no-repeat rounded-full"
           ></motion.div>
           <motion.div
             key={Right2Id}
@@ -220,7 +223,7 @@ const Houses = ({ Data = [] }: any) => {
             initial={FlowDirection ? "rightHidden" : "center"}
             animate="right2"
             exit={"rightHidden"}
-            className="absolute size-72 bg-center text-right bg-cover bg-no-repeat rounded-full"
+            className="absolute size-40 lg:size-72 bg-center text-right bg-cover right-36 lg:right-auto bg-no-repeat rounded-full"
           ></motion.div>
           <motion.div
             key={Right3Id}
@@ -228,13 +231,13 @@ const Houses = ({ Data = [] }: any) => {
             initial={FlowDirection ? "rightHidden" : "center"}
             animate="right3"
             exit={"rightHidden"}
-            className="absolute size-72 bg-center text-right bg-cover bg-no-repeat rounded-full"
+            className="absolute size-40 lg:size-72 bg-center text-right bg-cover right-44 lg:right-auto bg-no-repeat rounded-full"
           ></motion.div>
         </AnimatePresence>
       </motion.div>
         
 
-      <div className=" flex justify-center items-center gap-8 z-10 ">
+      <div className=" flex justify-center items-center gap-2 sm:gap-8 z-10 ">
 
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
@@ -256,7 +259,7 @@ const Houses = ({ Data = [] }: any) => {
 					src='/assets/arrowLeft.svg'
 				/>
         </motion.button>
-        <h1 className="text-4xl font-semibold text-center w-full min-w-[200px] m-12">{Data[CenterId].Name}</h1>
+        <h1 className="text-2xl sm:text-4xl font-semibold text-center w-full min-w-[60px] sm:min-w-[200px] m-12">{Data[CenterId].Name}</h1>
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}

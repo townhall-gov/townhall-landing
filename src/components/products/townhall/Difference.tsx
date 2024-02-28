@@ -7,12 +7,12 @@ const Difference = () => {
   return (
     <section className="min-h-full relative w-full m-24 ">
       <div className="min-h-[150vh] flex relative flex-col justify-center items-center bg-gradient-to-r from-[#1c1e1f] via-[#305561] to-transparent blur-[25px] backdrop-blur-[23px] w-full h-full"></div>
-      <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 w-full">
-        <h1 className="text-8xl text-center">
+      <div className="absolute top-24 md:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 w-full">
+        <h1 className="text-5xl md:text-8xl text-center">
           What makes us <br />
           <span className="text-primary">different? </span>
         </h1>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-24 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <Image
             className="motion-safe:animate-pulse bubbling"
             src="/assets/bubble.svg"
@@ -22,7 +22,7 @@ const Difference = () => {
           />
         </div>
       </div>
-      <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex items-baseline w-full justify-evenly gap-8">
+      <div className="absolute -bottom-12  md:bottom-24 left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row items-center md:items-baseline w-full justify-evenly gap-4 md:gap-8">
         <Card
           imgSrc="/assets/diff1.svg"
           text="Gamified User friendly Interace"
