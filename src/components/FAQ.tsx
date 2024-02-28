@@ -18,8 +18,8 @@ interface FaqItem {
 
 const FAQ = ({ faqData } : FaqListProps) => {
 	return (
-		<div className="w-full p-24 grid grid-cols-3">
-            <h1 className="text-6xl font-semibold col-span-1 mr-4">Frequently Asked Questions</h1>
+		<div className="w-full p-8 sm:p-24 flex flex-col sm:grid sm:grid-cols-3 ">
+            <h1 className="text-4xl sm:text-6xl font-semibold col-span-1 mr-4 mb-8 sm:mb-auto">Frequently Asked Questions</h1>
 			<Accordion type='single' collapsible className='w-full col-span-2'>
 				{ faqData.map((item: FaqItem, idx: number) => <AccordionItem value={`item-${idx}`} key={idx}>
 					<AccordionTrigger>{item.question}</AccordionTrigger>

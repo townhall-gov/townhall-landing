@@ -6,17 +6,17 @@ const Footer = () => {
 	return (
 		<div className='w-full relative'>
 			<div>
-				<div className='flex  items-start justify-between mt-32  px-24 pb-32'>
-					<div className='flex flex-col items-start gap-4 relative'>
+				<div className='flex flex-col md:flex-row items-start gap-8 justify-between mt-12 md:mt-32 px-4 md:px-24 pb-40 md:pb-32'>
+					<div className='flex flex-col w-full items-center sm:items-start gap-4 relative'>
 						<Image width={200} height={35} alt='townhall' src='/logo_full.svg' />
-						<p className="relative self-stretch [font-family:'Poppins-SemiBold',Helvetica]  text-white text-2xl leading-[normal]">
+						<p className="relative self-stretch text-center sm:text-left [font-family:'Poppins-SemiBold',Helvetica]  text-white text-lg sm:text-2xl leading-[normal]">
 							{" "}
-							Ut enim ad minim veniam, <br />
+							Ut enim ad minim veniam, <br className="hidden sm:block"/>
 							quis nostrud exercitation.
 						</p>
 					</div>
-					<div className='inline-flex items-start gap-16 relative flex-[0_0_auto]'>
-						<div className="flex-col gap-4  [font-family:'Poppins-Regular',Helvetica] inline-flex items-start relative flex-[0_0_auto]">
+					<div className='inline-flex flex-wrap justify-between items-start gap-y-16 gap-x-12 sm:gap-16 relative flex-[0_0_auto]'>
+						<div className="flex-col gap-4 w-2/5 sm:w-auto  [font-family:'Poppins-Regular',Helvetica] inline-flex items-start relative sm:flex-[0_0_auto]">
 							<div className='relative w-fit font-normal text-[#ffffffcc] text-sm tracking-[0.28px] leading-[normal]'>
 								PRODUCTS
 							</div>
@@ -27,7 +27,7 @@ const Footer = () => {
 								<p>Governance SDKs</p>
 							</div>
 						</div>
-						<div className="flex-col gap-[16px] [font-family:'Poppins-Regular',Helvetica] inline-flex items-start relative flex-[0_0_auto]">
+						<div className="flex-col gap-4 w-2/5 sm:w-auto [font-family:'Poppins-Regular',Helvetica] inline-flex items-start relative sm:flex-[0_0_auto]">
 							<div className='relative w-fit font-normal text-[#ffffffcc] text-sm leading-[normal]'>
 								COMPANY
 							</div>
@@ -37,7 +37,7 @@ const Footer = () => {
 								<p>Contact Us</p>
 							</div>
 						</div>
-						<div className='flex-col gap-[16px] inline-flex items-start relative flex-[0_0_auto]'>
+						<div className='flex-col gap-4 w-2/5 sm:w-auto inline-flex items-start relative sm:flex-[0_0_auto]'>
 							<div className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-[#ffffffcc] text-sm leading-[normal]">
 								RESOURCES
 							</div>
@@ -46,7 +46,7 @@ const Footer = () => {
 								<p>GitHub</p>
 							</div>
 						</div>
-						<div className='flex-col gap-[16px] inline-flex items-start relative flex-[0_0_auto]'>
+						<div className='flex-col gap-4 w-2/5 sm:w-auto inline-flex items-start relative sm:flex-[0_0_auto]'>
 							<div className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-[#ffffffcc] text-sm leading-[normal]">
 								SOCIALS
 							</div>
@@ -75,18 +75,18 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<div className='flex w-full items-center justify-between absolute bottom-0 px-[80px] py-6 bg-primary'>
+			<div className='flex flex-col md:flex-row w-full items-center justify-between absolute bottom-0 px-4 sm:px-20 py-6 gap-2 bg-primary'>
 				<p className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-background text-sm">
 					© 2024 Townhall Inc. All rights reserved.
 				</p>
-				<div className='gap-[32px] inline-flex items-start relative flex-[0_0_auto]'>
-					<div className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-background text-sm">
+				<div className='gap-4 sm:gap-8 inline-flex w-full sm:w-auto justify-between  items-start relative flex-[0_0_auto]'>
+					<div className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-background text-xs sm:text-sm">
 						Terms of Service
 					</div>
-					<div className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-background text-sm">
+					<div className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-background text-xs sm:text-sm">
 						Privacy Policy
 					</div>
-					<div className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-background text-sm">
+					<div className="relative w-fit [font-family:'Poppins-Regular',Helvetica] font-normal text-background text-xs sm:text-sm">
 						Cookies
 					</div>
 				</div>

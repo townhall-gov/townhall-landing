@@ -52,7 +52,7 @@ const Testimony = () => {
 
 	return (
 		<section className="mt-24 w-full overflow-hidden">
-            <h4 className=' flex m-24 mb-8 text-6xl whitespace-nowrap'>What our users say...</h4>
+            <h4 className=' flex m-4 md:m-24 mb-8 text-3xl sm:text-6xl whitespace-nowrap'>What our users say...</h4>
 			<div className='w-full flex flex-col items-center gap-4 '>
 				<Carousel
 					opts={{
@@ -62,15 +62,15 @@ const Testimony = () => {
 					setApi={setApi}
 				>
 					<CarouselContent>
-					<CarouselItem  className={` min-w-[300px] p-3  opacity-0 basis-1/3`}>
+					<CarouselItem  className={`min-w-[300px] p-3  opacity-0 basis-1/3`}>
 									
 							</CarouselItem>
 						{Array.from({ length: total }).map((_, index) => (
-							<CarouselItem key={index} className={`${index === current -2  ? "opacity-100" : "opacity-50"} transition-all min-w-[650px] p-3 basis-1/3`}>
+							<CarouselItem key={index} className={`${index === current -2  ? "opacity-100" : "opacity-50"} transition-all min-w-[350px] sm:min-w-[650px] p-3 basis-1/3`}>
 									<TestimonyCard />
 							</CarouselItem>
 						))}
-						<CarouselItem className={` min-w-[300px] opacity-0 p-3 basis-1/3`}>
+						<CarouselItem className={`min-w-[300px] opacity-0 p-3 basis-1/3`}>
 									
 							</CarouselItem>
 					</CarouselContent>
