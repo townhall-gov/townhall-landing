@@ -109,7 +109,7 @@ const MobileHeader = () => {
             </div>
             <div className="cursor-pointer flex items-center justify-center w-[40px] h-[40px] rounded-full socialbg_blue">
               <Image
-                src="/assets/discord.svg"
+                src="/assets/Discord.svg"
                 width={24}
                 height={24}
                 alt="Discord"
