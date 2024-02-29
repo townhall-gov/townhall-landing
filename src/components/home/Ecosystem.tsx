@@ -98,13 +98,13 @@ const Ecosystem = () => {
     <section className="md:mt-32 flex flex-col justify-center items-center gap-4">
       <div className="hidden lg:flex justify-start lg:justify-center gap-8 items-center">
         <Card cardName="townhall-white" />
-        <Card cardName="bountybird" />
-        <Card cardName="treasurease" />
+        <Card cardName="Bounty-Bird" />
+        <Card cardName="Treasur-Ease" />
       </div>
       <div className="flex flex-col lg:hidden  max-w-screen justify-start gap-8 items-center">
         <Card cardName="townhall-white" />
-        <Card cardName="bountybird" />
-        <Card cardName="Treasurease" />
+        <Card cardName="Bounty-Bird" />
+        <Card cardName="Treasur-Ease" />
       </div>
       <h1 className="text-3xl sm:text-6xl text-center font-semibold my-8 ">
         Our Growing Ecosystem
