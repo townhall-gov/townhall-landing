@@ -1,21 +1,10 @@
-"use client"
-
 
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button"
-import { getActiveBreakpoint } from "@/lib/utils";
 
 const LandingMain = () => {
-
-	useEffect(() => {
-		const currentBp = getActiveBreakpoint();
-		console.log(currentBp);
-		
-	},[])
-
-
 
 	return (
 		<section className='grid grid-rows md:grid-cols-12 justify-between items-center px-6 md:px-24 w-full'>

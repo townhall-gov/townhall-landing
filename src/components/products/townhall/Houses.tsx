@@ -16,8 +16,6 @@ const Houses = ({ Data = [] }: any) => {
   const [Right2Id, setRight2Id] = useState(2);
   const [Right3Id, setRight3Id] = useState(3);
 
-  const currentBp = getActiveBreakpoint();
-
   const updateId = (id: number, direction: number) => {
     if (id === 0 && direction === -1) {
       return Data.length - 1;
