@@ -68,7 +68,7 @@ const LandingMain = () => {
 				</div>
 			</div>
 			<div className="col-span-12 md:col-span-5 m-12 ">
-				<Image className="object-contain" style={{ filter: "drop-shadow(-54px -20px 80px #2567a8)"}}  src='/assets/crystal.gif' width='400' height='400' alt='crystal' />
+				<Image className="object-contain" style={{ filter: "drop-shadow(-54px -20px 80px #2567a8)"}}  src='/assets/crystal.gif' width='400' height='400' alt='crystal' loading="lazy"/>
 			</div>
 		</section>
 	);
