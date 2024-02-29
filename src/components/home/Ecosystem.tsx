@@ -104,7 +104,7 @@ const Ecosystem = () => {
       <div className="flex flex-col lg:hidden  max-w-screen justify-start gap-8 items-center">
         <Card cardName="townhall-white" />
         <Card cardName="bountybird" />
-        <Card cardName="treasurease" />
+        <Card cardName="Treasurease" />
       </div>
       <h1 className="text-3xl sm:text-6xl text-center font-semibold my-8 ">
         Our Growing Ecosystem
