@@ -3,11 +3,11 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 const Customize = () => {
   return (
-    <section className="flex w-full items-center justify-center gap-8 p-24 mt-24">
-      <div className="w-[400px] h-[300px] bg-[#353D46] rounded-3xl flex-1" />
-      <div className="flex-1 flex flex-col gap-4">
+    <section className="flex flex-col md:flex-row w-full items-center justify-center gap-8 p-4 md:p-24 mt-8 md:mt-24">
+      <div className="w-full md:w-[400px] h-[300px] bg-[#353D46] rounded-3xl md:flex-1" />
+      <div className="md:flex-1 flex flex-col gap-4">
         <div className="flex items-center gap-2">
-          <h1 className="text-5xl font-semibold ">How to Customize</h1>
+          <h1 className="text-3xl md:text-5xl font-semibold ">How to Customize</h1>
           <div className="flex items-center justify-center p-2 rounded-lg bg-[#696B7DB2]">
             <ArrowTopRightIcon className="h-5 w-5" />
           </div>

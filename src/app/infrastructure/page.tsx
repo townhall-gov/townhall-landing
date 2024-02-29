@@ -17,12 +17,12 @@ const infrastructure = () => {
     <Main/>
     <Kit/>
      <Features/>
-    {/*<Customize/>
+    <Customize/>
     <GetInfraStarted/>
-    <div className='bg-[#2F45C6]'>
+   <div className='bg-[#2F45C6] w-full'>
     <FAQ faqData={InfraFaq} />
     <GetStarted />
-    </div> */}
+    </div> 
     <Footer />
   </main>
   )
