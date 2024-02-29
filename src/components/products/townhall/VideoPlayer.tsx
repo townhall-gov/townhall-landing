@@ -20,10 +20,10 @@ const VideoPlayer: React.FC = () => {
   };
 
   return (
-    <div className="relative mx-24 rounded-3xl mt-24 overflow-hidden">
+    <div className="relative mx-8 md:mx-24 rounded-3xl mt-8 md:mt-24 overflow-hidden">
       <video
         ref={videoRef}
-        className="w-full min-h-[600px] object-contain"
+        className="w-full min-h-[250px] sm:min-h-[350px] md:min-h-[600px] object-contain"
         controls={true}
         // onClick={togglePlay}
       >

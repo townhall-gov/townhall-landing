@@ -9,6 +9,7 @@ import Testimony from "@/components/home/Testimony";
 import TrustedBy from "@/components/home/TrustedBy";
 import { homeFaq } from "@/services/constants";
 import GetStarted from "@/components/GetStarted";
+import RoadmapMb from "@/components/home/RoadmapMb";
 
 
 export default function Home() {
@@ -17,13 +18,14 @@ export default function Home() {
       <Header/>
        <LandingMain/>
        <TrustedBy />
-       <Solution/>
-       <Ecosystem/>
-       <Roadmap/>
+        <Solution/>
+      <Ecosystem/>
+      <Roadmap/>
+      <RoadmapMb/>
        <Testimony/>
-      <FAQ faqData={homeFaq} />
+        <FAQ faqData={homeFaq} />
       <GetStarted />
-       <Footer/>
+      <Footer/>
     </main>
   );
 }

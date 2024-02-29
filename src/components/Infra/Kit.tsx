@@ -3,9 +3,9 @@ import React from "react";
 
 const Kit = () => {
   return (
-    <section className="flex flex-col w-full items-center justify-center p-24">
-      <h1 className="text-5xl font-semibold m-12">TownHall Governance Kit</h1>
-      <div className="grid grid-cols-3 justify-around gap-32">
+    <section className="flex flex-col w-full items-center justify-center p-8 md:p-24">
+      <h1 className="text-3xl md:text-5xl font-semibold md:m-12">TownHall Governance Kit</h1>
+      <div className="flex flex-col md:grid md:grid-cols-3 justify-around gap-8 md:gap-32">
         <Card imgSrc="/assets/Kit1.svg" text="Highly Customisable" />
         <Card imgSrc="/assets/Kit2.svg" text="Buildable Features" />
         <Card imgSrc="/assets/Kit3.svg" text="Modular SDK" />

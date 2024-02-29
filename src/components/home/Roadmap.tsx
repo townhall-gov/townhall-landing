@@ -37,7 +37,7 @@ const Card = ({
 
 const Roadmap = () => {
 	return (
-		<div className='grid relative grid-cols-12  border-t border-b bg-transparent mt-24 w-full'>
+		<div className='hidden sm:grid relative grid-cols-12  border-t border-b bg-transparent mt-24 w-full'>
 			<div className='col-span-5 border-r pb-48'>
 				<h1 className='-rotate-90 text-8xl sticky top-48 my-24 md:mb-48'>Roadmap</h1>
 			</div>

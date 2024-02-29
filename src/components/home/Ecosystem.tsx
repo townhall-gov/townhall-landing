@@ -39,7 +39,7 @@ const Card = ({ cardName }: { cardName: string }) => {
 
   return (
     <motion.div
-      className="relative w-[350px] h-[300px] flex flex-col justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden"
+      className="relative w-[300px] h-[280px] md:w-[350px] md:h-[300px] flex flex-col justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -95,26 +95,31 @@ const Card = ({ cardName }: { cardName: string }) => {
 
 const Ecosystem = () => {
   return (
-    <section className="mt-32 flex flex-col justify-center items-center gap-4">
-      <div className="flex justify-center gap-8 items-center">
+    <section className="md:mt-32 flex flex-col justify-center items-center gap-4">
+      <div className="hidden lg:flex justify-start lg:justify-center gap-8 items-center">
         <Card cardName="townhall-white" />
         <Card cardName="bountybird" />
         <Card cardName="treasurease" />
       </div>
-      <h1 className="text-6xl font-semibold my-8 ">
+      <div className="flex flex-col lg:hidden  max-w-screen justify-start gap-8 items-center">
+        <Card cardName="townhall-white" />
+        <Card cardName="bountybird" />
+        <Card cardName="treasurease" />
+      </div>
+      <h1 className="text-3xl sm:text-6xl text-center font-semibold my-8 ">
         Our Growing Ecosystem
       </h1>
 
-      <div className="relative w-full py-20 gap-8 flex justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden">
-
-		<Image
-            className="z-10"
-            alt="Frame"
-            src={`/assets/infra.svg`}
-            width={65}
-			height={65}/>
-			<h1 className="text-5xl font-semibold ">Infrastructure</h1>
-	  </div>
+      <div className="relative w-full py-8 md:py-20 gap-8 flex justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden">
+        <Image
+          className="z-10"
+          alt="Frame"
+          src={`/assets/infra.svg`}
+          width={65}
+          height={65}
+        />
+        <h1 className="text-2xl md:text-5xl font-semibold ">Infrastructure</h1>
+      </div>
     </section>
   );
 };

@@ -3,7 +3,7 @@ import React from "react";
 
 const TestimonyCard = () => {
 	return (
-		<div className='p-8 bg-[#ffffff18] rounded-3xl'>
+		<div className='p-4 sm:p-8 bg-[#ffffff18] rounded-3xl'>
 			<div className='inline-flex flex-col items-start gap-[32px]'>
 				<p className="relative  [font-family:'Poppins-Regular',Helvetica] font-normal text-transparent text-base">
 					<span className='text-[#e6e6e6]'>
@@ -22,11 +22,11 @@ const TestimonyCard = () => {
 						src='/assets/user.png'
 					/>
 					<div className='flex items-center justify-between relative flex-1 grow'>
-						<div className='relative w-[135px] h-[42px]'>
-							<div className="h-[18px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-white text-[16px] tracking-[0.80px] leading-[18px] whitespace-nowrap">
+						<div className='relative w-[100px] sm:w-[135px] h-[42px]'>
+							<div className=" [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-white text-sm sm:text-[16px] tracking-[0.80px] leading-[18px] whitespace-nowrap">
 								Jane Doe
 							</div>
-							<div className="h-[18px] [font-family:'Poppins-Regular',Helvetica] font-normal text-white text-[16px] tracking-[0.80px] leading-[18px] whitespace-nowrap">
+							<div className=" [font-family:'Poppins-Regular',Helvetica] font-normal text-white text-sm sm:text-base tracking-[0.80px] leading-[18px] whitespace-nowrap">
 								ROLE, COMPANY
 							</div>
 						</div>

@@ -3,11 +3,11 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section className="w-full  px-24 mt-24">
+    <section className="w-full  px-8 md:px-24 mt-24">
       <h1 className="text-6xl w-full text-left font-semibold mb-12">
         Townhall Features
       </h1>
-      <div className="grid w-full grid-cols-12 gap-12">
+      <div className="flex flex-wrap flex-col lg:grid w-full lg:grid-cols-12 gap-12">
         <div className="col-span-3 w-full ">
           <TownhallCard
             image="/assets/THfeature-1.svg"

@@ -16,7 +16,7 @@ const townhall = () => {
       <Header />
       <Banner />
       <Elevate/>
-      <VideoPlayer/>
+       <VideoPlayer/>
       <Features/>
       <Houses Data={housesList}/>
       <Difference/>
