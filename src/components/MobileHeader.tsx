@@ -24,10 +24,12 @@ const MobileHeader = () => {
       {" "}
       <div className=" mx-0 flex flex-col justify-between items-start  border-t mt-14 gap-12">
         <nav className="flex flex-col w-full ">
-          <motion.div className="border-b p-4 w-full" variants={itemVariants}>
+          <motion.div className="border-b p-4 w-full cursor-pointer" variants={itemVariants}>
+          <Link href="/" legacyBehavior passHref>
             <h1 className="text-white">HOME</h1>
+            </Link>
           </motion.div>
-          <motion.div className="border-b p-4 w-full" variants={itemVariants}>
+          <motion.div className="border-b p-4 w-full cursor-pointer" variants={itemVariants}>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>PRODUCTS</AccordionTrigger>
@@ -71,11 +73,15 @@ const MobileHeader = () => {
               </AccordionItem>
             </Accordion>
           </motion.div>
-          <motion.div className="border-b p-4 w-full" variants={itemVariants}>
+          <motion.div className="border-b p-4 w-full cursor-pointer" variants={itemVariants}>
+          <Link href="/infrastructure" legacyBehavior passHref>
             <h1 className="text-white">INFRASTRUCTURE</h1>
+            </Link>
           </motion.div>
-          <motion.div className="border-b p-4 w-full" variants={itemVariants}>
+          <motion.div className="border-b p-4 w-full cursor-pointer" variants={itemVariants}>
+          <Link href="/contact" legacyBehavior passHref>
             <h1 className="text-white">CONTACT</h1>
+            </Link>
           </motion.div>
         </nav>
         <div className="flex flex-col justify-center w-full items-center gap-4">

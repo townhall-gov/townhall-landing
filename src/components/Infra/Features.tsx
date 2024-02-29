@@ -3,24 +3,24 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section className="flex flex-col w-full items-center justify-center p-24 pb-0 relative gap-8 min-h-screen">
-      <div className="grid grid-cols-12 h-full w-full justify-center items-center gap-8 ">
+    <section className="flex flex-col w-full items-center justify-center p-4 md:p-24 pb-0 relative gap-4 md:gap-8 min-h-screen">
+      <div className="flex flex-col md:grid md:grid-cols-12 h-full w-full justify-center items-center gap-4 md:gap-8 ">
         <Card1
           title="Proposals"
-          minHeight="min-h-[500px]"
-          imgClassName="size-full absolute left-0 bottom-0"
+          minHeight="min-h-[400px] md:min-h-[500px]"
+          imgClassName="size-full absolute left-0 -bottom-12 md:bottom-0"
           description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
           imageMain="/assets/Proposal.svg"
         />
         <Card1
           title="Discussion"
-          minHeight="min-h-[500px]"
-          imgClassName="size-full absolute left-0 -bottom-12"
+          minHeight="min-h-[400px] md:min-h-[500px]"
+          imgClassName="size-full absolute left-0 -bottom-24  md:-bottom-12"
           description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
           imageMain="/assets/Discussion.svg"
         />
       </div>
-      <div className="grid  w-full justify-center items-center overflow-hidden">
+      <div className="hidden md:grid  w-full justify-center items-center overflow-hidden">
         <Card2
           title="Delegation"
           imgClassName="size-full absolute -right-72 bottom-0 z-10"
@@ -30,23 +30,32 @@ const Features = () => {
           imageGlow="/assets/DelegationGlow.svg"
         />
       </div>
-      <div className="grid grid-cols-12 h-full w-full justify-center items-center gap-8 ">
+      <div className="flex md:hidden  w-full justify-center items-center overflow-hidden">
+        <Card1
+          title="Delegation"
+          minHeight=" min-h-[500px]"
+          imgClassName="size-full absolute left-0 -bottom-36"
+          description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          imageMain="/assets/Delegation.svg"
+        />
+      </div>
+      <div className="flex flex-col md:grid md:grid-cols-12 h-full w-full justify-center items-center gap-8 ">
         <Card1
           title="Bounties"
-          minHeight="min-h-[600px]"
-          imgClassName="size-3/4 absolute left-0 bottom-0"
+          minHeight="min-h-[450px] md:min-h-[600px]"
+          imgClassName="size-3/5 md:size-3/4 absolute left-0 bottom-0"
           description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt"
           imageMain="/assets/BountiesCoin.svg"
         />
         <Card1
           title="Social Feed"
-          minHeight="min-h-[600px]"
+          minHeight="min-h-[550px] md:min-h-[600px]"
           imgClassName="size-3/4 absolute right-0 bottom-0"
           description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt"
           imageMain="/assets/SocialFeed.svg"
         />
       </div>
-      <div className="grid  w-full justify-center items-center overflow-hidden">
+      <div className="hidden md:grid  w-full justify-center items-center overflow-hidden">
         <Card2
           title="Prediction"
           imgClassName="size-full absolute -right-60 bottom-0 z-10"
@@ -56,7 +65,17 @@ const Features = () => {
           centered
         />
       </div>
-      <div className="grid  w-full justify-center items-center overflow-hidden">
+      <div className="flex md:hidden  w-full justify-center items-center overflow-hidden">
+        <Card1
+          title="Prediction"
+          minHeight=" min-h-[400px]"
+          imgClassName="size-1/2 absolute right-0 -bottom-12 z-10"
+          description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          imageMain="/assets/Prediction.svg"
+         
+        />
+      </div>
+      <div className="hidden md:grid  w-full justify-center items-center overflow-hidden">
         <Card2
           title="Treasury"
           imgClassName="size-full absolute -left-72 bottom-0 z-10"
@@ -67,25 +86,35 @@ const Features = () => {
           centered
         />
       </div>
-      <div className="grid grid-cols-12 h-full w-full justify-center items-center gap-8 ">
+      <div className="flex md:hidden  w-full justify-center items-center overflow-hidden">
+        <Card1
+          title="Treasury"
+          minHeight=" min-h-[400px]"
+          imgClassName="size-1/2 absolute left-0 -bottom-12 z-10"
+          description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          imageMain="/assets/Treasury.svg"
+         
+        />
+      </div>
+      <div className="flex flex-col md:grid md:grid-cols-12 h-full w-full justify-center items-center gap-8 ">
         <Card1
           title="Automated Reports"
-          minHeight="min-h-[600px]"
-          imgClassName="size-11/12 absolute left-0 -bottom-24"
+          minHeight="min-h-[400px] md:min-h-[600px]"
+          imgClassName="size-9/12 md:size-11/12 absolute left-0 -bottom-24"
           description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt"
           imageMain="/assets/Automated.svg"
           imageGlow="/assets/DelegationGlow.svg"
         />
         <Card1
           title="Social Notification"
-          minHeight="min-h-[600px]"
-          imgClassName="size-3/4 absolute right-0 bottom-0"
+          minHeight="min-h-[400px] md:min-h-[600px]"
+          imgClassName="size-3/4 absolute right-0 -bottom-24 md:bottom-0"
           description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt"
           imageMain="/assets/SocialNotification.svg"
           imageGlow="/assets/DelegationGlow.svg"
         />
       </div>
-      <div className="grid  w-full justify-center items-center overflow-hidden">
+      <div className="hidden md:grid  w-full justify-center items-center overflow-hidden">
         <Card2
           title="Referral and Leaderboard"
           imgClassName="size-full absolute -left-72 bottom-0 z-10"
@@ -94,6 +123,16 @@ const Features = () => {
           imageGlow="/assets/DelegationGlow.svg"
           rtl
           centered
+        />
+      </div>
+      <div className="flex md:hidden  w-full justify-center items-center overflow-hidden">
+        <Card1
+          title="Referral and Leaderboard"
+          minHeight=" min-h-[500px]"
+          imgClassName="size-full md:size-1/2 absolute left-0 -bottom-36 z-10"
+          description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          imageMain="/assets/Referral.svg"
+         
         />
       </div>
     </section>
@@ -117,7 +156,7 @@ const Card1 = ({
 }) => {
   return (
     <div
-      className={`col-span-6 border bg-[#1e2227] size-full ${minHeight} overflow-hidden m-auto relative rounded-3xl p-12`}
+      className={`col-span-6 border bg-[#1e2227] size-full ${minHeight} overflow-hidden m-auto relative rounded-3xl p-6 md:p-12`}
     >
       <h1 className="text-2xl">{title}</h1>
       <p className="text-lg text-secondary mt-2">{description}</p>

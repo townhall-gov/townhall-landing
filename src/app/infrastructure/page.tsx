@@ -6,7 +6,7 @@ import Customize from '@/components/Infra/Customize'
 import GetInfraStarted from '@/components/Infra/GetStarted'
 import Kit from '@/components/Infra/Kit'
 import Main from '@/components/Infra/Main'
-import Radar from '@/components/Infra/Features'
+import Features from '@/components/Infra/Features'
 import { InfraFaq } from '@/services/constants'
 import React from 'react'
 
@@ -16,13 +16,13 @@ const infrastructure = () => {
     <Header />
     <Main/>
     <Kit/>
-    <Radar/>
-    <Customize/>
+     <Features/>
+    {/*<Customize/>
     <GetInfraStarted/>
     <div className='bg-[#2F45C6]'>
     <FAQ faqData={InfraFaq} />
     <GetStarted />
-    </div>
+    </div> */}
     <Footer />
   </main>
   )
