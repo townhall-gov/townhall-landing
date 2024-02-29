@@ -45,13 +45,13 @@ const Roadmap = () => {
 				<div className='grid relative grid-cols-12 border-t bg-transparent w-full'>
 					<div className='col-span-6 h-full w-full'> 
                     {/* Add Even Quater data here */}
-                        <Card date='Apr-Jun 23' quarter='Q2' points={['Batch Voting', 'Treasury Analytics', 'DAO Management']} imgSrc="/assets/cone-1.svg" isActive={false}/>  
-                        <Card date='Oct-Dev 23' quarter='Q4' points={['Data', 'Releasing', 'Soon']} imgSrc="/assets/cone-1.svg" isActive={false}/>
+                        <Card date='Apr-Jun 23' quarter='Q2' points={['Batch Voting', 'Treasury Analytics', 'DAO Management']} imgSrc="/assets/Cone-1.svg" isActive={false}/>  
+                        <Card date='Oct-Dev 23' quarter='Q4' points={['Data', 'Releasing', 'Soon']} imgSrc="/assets/Cone-1.svg" isActive={false}/>
 					</div>
 					<div className='col-span-6  h-full w-full'> 
                      {/* Add Odd Quater data here */}
-                        <Card date='Jan-Mar 23' quarter='Q1' points={['Social Bounties Platform on Lens Protocol', 'Townhall Governance Platform Launch and Onboarding']} imgSrc="/assets/cone.svg" isActive={true}/>
-                        <Card date='Jul-Sept 23' quarter='Q3' points={['Leaderboard and Points', 'Community and Treasury Management Tools', 'Launch of Collectibles']} imgSrc="/assets/cone-2.svg" isActive={false}/>
+                        <Card date='Jan-Mar 23' quarter='Q1' points={['Social Bounties Platform on Lens Protocol', 'Townhall Governance Platform Launch and Onboarding']} imgSrc="/assets/Cone.svg" isActive={true}/>
+                        <Card date='Jul-Sept 23' quarter='Q3' points={['Leaderboard and Points', 'Community and Treasury Management Tools', 'Launch of Collectibles']} imgSrc="/assets/Cone-2.svg" isActive={false}/>
 					</div>
 				</div>
 			</div>
