@@ -35,8 +35,8 @@ const Card = ({
 
 const RoadmapMb = () => {
 	return (
-		<div className='w-full border-t-2 border-b-2  mt-24'>
-		<div className='flex sm:hidden flex-col relative justify-center items-center  border-l-2 ml-8 bg-transparent '>
+		<div className='flex sm:hidden w-full border-t-2 border-b-2  mt-24'>
+		<div className=' flex-col relative justify-center items-center  border-l-2 ml-8 bg-transparent '>
 			<div className='flex-1 '>
 				<h1 className='text-4xl sm:text-6xl my-12  '>Roadmap</h1>
 			</div>
