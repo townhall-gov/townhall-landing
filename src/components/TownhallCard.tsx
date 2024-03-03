@@ -52,7 +52,7 @@ const TownhallCard: React.FC<TownhallCardProps> = ({ image, title, description }
             {title}
           </motion.div>
             <motion.p
-              className="relative [font-family:'Poppins-Regular',Helvetica] font-light "
+              className="relative [font-family:'Poppins-Regular',Helvetica] font-light text-center"
               initial={{ translateY: 0, opacity: 0, height: "0px", marginTop: "0"}}
               animate={descControls}
             >

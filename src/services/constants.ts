@@ -19,6 +19,7 @@ export const products = [
     link: "/docs",
     logo: "/assets/treasurEase.svg",
     desc: "Lorem ipsum dolor sit",
+    coming_soon: true,
   },
 ];
 

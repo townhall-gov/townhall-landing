@@ -3,7 +3,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section className="w-full  px-8 md:px-24 mt-24">
+    <section className="w-full  px-8 md:px-24 mt-48">
       <h1 className="text-6xl w-full text-left font-semibold mb-12">
         Townhall Features
       </h1>
