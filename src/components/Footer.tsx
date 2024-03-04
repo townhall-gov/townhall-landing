@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div className='w-full relative'>
 			<div>
-				<div className='flex flex-col md:flex-row items-start gap-8 justify-between mt-12 md:mt-32 bg-[#191e23] px-4 md:px-24 pt-16 pb-40 md:pb-32'>
+				<div className='flex flex-col md:flex-row items-start gap-8 justify-between pt-12 md:pt-32 bg-[#191e23] px-4 md:px-24 pb-40 md:pb-32'>
 					<div className='flex flex-col w-full items-center sm:items-start gap-4 relative'>
 						<Image width={200} height={35} alt='townhall' src='/logo_full.svg' />
 						<p className="relative self-stretch text-center sm:text-left [font-family:'Poppins-SemiBold',Helvetica]  text-white text-lg sm:text-2xl leading-[normal]">

@@ -66,7 +66,7 @@ const GetStarted = () => {
         </div>
       </div>
       <div className="mt-24 flex flex-col md:flex-row items-center gap-8">
-        <Button size="lg">
+        <Button className="font-light  shadow-inner  shadow-[#e1e584]" size="lg">
           <Image
             className="mr-2"
             alt="Frame"
@@ -76,7 +76,7 @@ const GetStarted = () => {
           />
           View Guide{" "}
           <Image
-            className="ml-2"
+            className="ml-2 border-0"
             alt="Frame"
             src="/assets/arrowTopRightBlk.svg"
             width={20}
@@ -86,7 +86,7 @@ const GetStarted = () => {
         <Button
           size="lg"
           variant={"secondary"}
-          className="bg-[#232421] text-white"
+          className="bg-gradient-to-r from-[#2D2E3A] to-[#232421] shadow-inner  shadow-[#818181] border-0  text-white"
         >
           {" "}
           <Image
@@ -117,8 +117,8 @@ const GetStarted = () => {
             placeholder="Enter your email"
           />
         </div>
-        <Button className="audiowide-bold" size="lg">
-          Book Demo
+        <Button className="audiowide-bold" variant="white" size="lg">
+          Get In Touch
         </Button>
       </div>
     </section>
