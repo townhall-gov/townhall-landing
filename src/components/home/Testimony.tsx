@@ -66,7 +66,7 @@ const Testimony = () => {
 									
 							</CarouselItem>
 						{Array.from({ length: total }).map((_, index) => (
-							<CarouselItem key={index} className={`${index === current -2  ? "opacity-100" : "opacity-50"} transition-all min-w-[350px] sm:min-w-[650px] p-3 basis-1/3`}>
+							<CarouselItem key={index} className={`${index === current -2  ? "opacity-100" : "opacity-50"} transition-all min-w-[350px] sm:min-w-[650px] p-6 basis-1/3`}>
 									<TestimonyCard />
 							</CarouselItem>
 						))}

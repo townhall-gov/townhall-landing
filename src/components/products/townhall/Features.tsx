@@ -3,7 +3,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section className="w-full  px-8 md:px-24 mt-24">
+    <section className="w-full  px-8 md:px-24 mt-48">
       <h1 className="text-6xl w-full text-left font-semibold mb-12">
         Townhall Features
       </h1>
@@ -24,7 +24,7 @@ const Features = () => {
         </div>
         <div className="col-span-3 w-full">
           <TownhallCard
-            image="/assets/THfeature-2.svg"
+            image="/assets/Thfeature-2.svg"
             title="Sentiment  Commenting"
             description="Gauge community sentiment and enablemore informed and insightful discussions."
           />

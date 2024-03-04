@@ -58,7 +58,7 @@ const Header: React.FC = () => {
           isScrolled ? "bg-transparent backdrop-blur-2xl" : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto flex justify-between items-center p-4">
+        <div className=" flex justify-between items-center p-4 px-24">
           <div className="flex items-center">
             <Link href="/">
               <Image
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>PRODUCTS</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="flex flex-col gap-4 p-2 w-60">
+                    <ul className="flex flex-col gap-4 p-2 w-72 [font-family:'Poppins-SemiBold',Helvetica] ">
                       {products.map((item) => (
                         <li key={item.key}>
                           <Link
@@ -105,12 +105,14 @@ const Header: React.FC = () => {
                                 <div className=" font-semibold text-white text-sm whitespace-nowrap">
                                   {item.title}
                                 </div>
-                                <Image
+                                {item.coming_soon ? <span className="rounded-full text-xs bg-destructive px-1.5">
+                                  Coming Soon
+                                </span> :<Image
                                   src="/assets/arrow_right.svg"
                                   alt="Logo"
                                   width={16}
                                   height={16}
-                                />
+                                />}
                               </div>
                               <div className="w-fit  font-medium text-white text-xs  whitespace-nowrap">
                                 {item.desc}
@@ -179,7 +181,7 @@ const Header: React.FC = () => {
               </div>
             </div>
             <Link href="/launch-app">
-              <div className="m-[-8px] transition-all hover:border-b-4 hover:border-r-2 rounded-full hover:border-[#38A1FF]">
+              <div className="m-[-8px] transition-all hover:border-b-4 hover:border-r-2 rounded-full ml-3 hover:border-[#38A1FF]">
                 <Button className="m-0.5" variant="outline">
                   Book Demo
                 </Button>
