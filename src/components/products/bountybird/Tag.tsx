@@ -14,17 +14,18 @@ const Tag = () => {
           suspendisse tortor aene.
         </p>
         <div className="items-center gap-4 inline-flex flex-col mb-8 md:flex-row relative">
-          <Button className="audiowide-bold">
+          <Button className="audiowide-bold" size='lg'>
             <Image
               className="mr-2"
               src="/assets/lens.svg"
               alt="hey"
+              
               width={20}
               height={20}
             />{" "}
             Create Bounty on Hey
           </Button>
-          <Button variant="secondary">
+          <Button variant="secondary" size='lg'>
             <Image
               className="mr-2"
               src="/assets/xIcon.svg"

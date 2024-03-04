@@ -7,7 +7,7 @@ const GetStarted = () => {
   return (
     <section className="w-full ">
 
-    <div className="bg-[url('/assets/infraStartedBg.svg')]  overflow-hidden bg-cover  bg-center bg-no-repeat w-full mt-24 p-4 md:p-12 flex flex-col  items-center">
+    <div className="bg-[url('/assets/infraStartedBg.svg')]  overflow-hidden bg-cover  bg-center bg-no-repeat w-full mt-24 p-4 md:p-12 pt-48 flex flex-col  items-center">
       <div className="flex flex-col items-center gap-2 mt-12">
         <p className="text-sm md:text-xl font-semibold">FOR DEVS</p>
         <h1 className="text-2xl md:text-5xl font-semibold">Get Started</h1>

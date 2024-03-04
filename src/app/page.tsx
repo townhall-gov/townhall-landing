@@ -23,7 +23,7 @@ export default function Home() {
       <Roadmap/>
       <RoadmapMb/>
        <Testimony/>
-        <FAQ faqData={homeFaq} />
+        <FAQ faqData={homeFaq} type='home'/>
       <GetStarted />
       <Footer/>
     </main>

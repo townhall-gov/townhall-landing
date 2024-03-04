@@ -20,7 +20,7 @@ const Features = () => {
           imageMain="/assets/Discussion.svg"
         />
       </div>
-      <div className="hidden md:grid  w-full justify-center items-center overflow-hidden">
+      <div className="hidden md:flex  w-full justify-center items-center overflow-hidden">
         <Card2
           title="Delegation"
           imgClassName="size-full absolute -right-72 bottom-0 z-10"
@@ -50,7 +50,7 @@ const Features = () => {
         <Card1
           title="Social Feed"
           minHeight="min-h-[550px] md:min-h-[600px]"
-          imgClassName="size-3/4 absolute right-0 bottom-0"
+          imgClassName="size-3/4 absolute -right-8 bottom-0"
           description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt"
           imageMain="/assets/SocialFeed.svg"
         />
