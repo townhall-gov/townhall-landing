@@ -171,7 +171,7 @@ const Houses = ({ Data = [] }: any) => {
   };
   return (
     <motion.div className="flex flex-col items-center justify-center p-8 lg:p-24 pb-0 w-full overflow-hidden">
-      <h1 className="text-5xl font-semibold text-center lg:text-left w-full m-12">
+      <h1 className="text-5xl font-semibold text-center lg:text-left w-full m-12 mb-24">
         Houses On Townhall
       </h1>
       <motion.div className="relative size-40 lg:size-72">

@@ -19,8 +19,8 @@ const infrastructure = () => {
      <Features/>
     <Customize/>
     <GetInfraStarted/>
-   <div className='bg-[#2F45C6] w-full'>
-    <FAQ faqData={InfraFaq} />
+   <div className='bg-[#2F45C6]  w-full'>
+    <FAQ faqData={InfraFaq} type='Infra'/>
     <GetStarted />
     </div> 
     <Footer />

@@ -16,9 +16,9 @@ const Kit = () => {
 
 const Card = ({ imgSrc, text }: { imgSrc: string; text: string }) => {
   return (
-    <div className="inline-flex size-60 col-span-1 gap-4 flex-col items-center rounded-3xl bg-[#102a4a] p-2 justify-center relative">  
+    <div className="inline-flex size-60 col-span-1 gap-4 flex-col items-center rounded-3xl bg-[#0c1a26] p-2 justify-center relative">  
         <Image className="absolute size-56" alt="Plant" src={imgSrc} width={44} height={44} />
-      <div className="relative uppercase [font-family:'Poppins-Regular',Helvetica] font-semibold text-white text-center">
+      <div className="relative uppercase w-3/4 audiowide-regular font-semibold text-white text-center">
         {text}
       </div>
     </div>
