@@ -24,7 +24,7 @@ const Features = () => {
         </div>
         <div className="col-span-3 w-full">
           <TownhallCard
-            image="/assets/THfeature-2.svg"
+            image="/assets/Thfeature-2.svg"
             title="Sentiment  Commenting"
             description="Gauge community sentiment and enablemore informed and insightful discussions."
           />
