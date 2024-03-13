@@ -13,9 +13,9 @@ const LandingMain = () => {
               Townhall: The All-in-One DAO Toolkit
             </p>
             <p className="relative self-stretch [font-family:'Poppins-Regular',Helvetica] font-normal text-[#e2e2e2] text-sm md:text-xl md:leading-9">
-              Effortlessly manage your decentralized collective with Townhall's
-              unified platform for governance, treasury, community, and
-              decision-making.
+              Effortlessly manage your decentralized collective with
+              Townhall&apos;s unified platform for governance, treasury,
+              community, and decision-making.
             </p>
           </div>
           <div className="inline-flex  items-center gap-4 relative">
