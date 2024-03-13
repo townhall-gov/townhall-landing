@@ -15,25 +15,25 @@ const Features = () => {
             description="Delegate voting power and foster collaboration, allowing community members to represent others and make decisions collectively."
           />
         </div>
-        <div className="col-span-3 w-full ">
-          <TownhallCard
-            image="/assets/THfeature-3.svg"
-            title="Enable Voting"
-            description="Allowing users to express opinions while making decisions like voting by enhancing transparency."
-          />
-        </div>
         <div className="col-span-3 w-full">
           <TownhallCard
             image="/assets/Thfeature-2.svg"
             title="Sentiment  Commenting"
-            description="Gauge community sentiment and enablemore informed and insightful discussions."
+            description="Gauge community sentiment with sentiment-based commenting, enabling more informed and insightful discussions."
           />
         </div>
         <div className="col-span-3 w-full">
           <TownhallCard
             image="/assets/THfeature-4.svg"
-            title="Engage Community"
+            title="Engage Community through Discussions"
             description="Facilitate meaningful conversations and engage your community through integrated discussion boards, creating a hub for collaborative decision-making."
+          />
+        </div>
+        <div className="col-span-3 w-full ">
+          <TownhallCard
+            image="/assets/THfeature-3.svg"
+            title="Enable Voting with Comments"
+            description="Enhance transparency and participation by combining voting and commenting, allowing users to express opinions while making decisions."
           />
         </div>
       </div>

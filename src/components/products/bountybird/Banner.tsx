@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -14,9 +15,20 @@ const Banner = () => {
           loading="lazy"
         />
       </div>
-      <Button className="md:fixed bottom-10 audiowide-bold z-10 text-white" size="lg" variant={"destructive"}>
-        Launch App{" "}
-      </Button> 
+      <Link
+        className="md:fixed bottom-10 z-10 "
+        href="https://www.bountybird.xyz/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button
+          className="audiowide-bold text-white"
+          size="lg"
+          variant={"destructive"}
+        >
+          Launch App{" "}
+        </Button>
+      </Link>
     </section>
   );
 };
