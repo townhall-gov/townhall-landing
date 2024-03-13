@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import "./style.css";
+import ReactHTMLParser from "react-html-parser";
 
 const Difference = () => {
-  
   return (
     <section className="min-h-full relative w-full m-24 ">
       <div className="min-h-[150vh] flex relative flex-col justify-center items-center bg-gradient-to-r from-[#1c1e1f] via-[#305561] to-transparent blur-[25px] backdrop-blur-[23px] w-full h-full"></div>
@@ -27,7 +27,10 @@ const Difference = () => {
           imgSrc="/assets/diff1.svg"
           text="Gamified User friendly Interace"
         />
-        <Card imgSrc="/assets/diff2.svg" text="Easy Onboarding" />
+        <Card
+          imgSrc="/assets/diff2.svg"
+          text="Easy Onboarding: Login via <div class='inline-flex gap-2 items-center'> <img src='/assets/privyIcon.png' className='w-6 h-6 '/> or  <img src='/assets/safeIcon.png' className='w-6 h-6 pl-2'/> </div>"
+        />
         <Card
           imgSrc="/assets/diff3.svg"
           text="Modular Infrastructure: Customise the platform to your needs"
@@ -47,8 +50,8 @@ const Card = ({
   return (
     <div className="inline-flex flex-col items-center relative">
       <Image alt="Plant" src={imgSrc} width={200} height={200} />
-      <div className="relative w-[250px] [font-family:'Poppins-Regular',Helvetica] font-light text-white text-2xl text-center">
-        {text}
+      <div className="relative w-[250px] [font-family:'Poppins-Regular',Helvetica] font-light text-white text-2xl flex flex-col items-center text-center">
+        {ReactHTMLParser(text)}
       </div>
     </div>
   );

@@ -101,9 +101,9 @@ export const oneStopData = [
     image: "/assets/solution2.svg",
   },
   {
-    title: "Advanced Treasury Management",
+    title: "Treasury Management",
     description:
-      "Track and optimize your treasury ensuring responsible allocation and growth of your community's funds. Maximise the value and sustainability of your ecosystem through automated reports and custom notifications.",
+      "Gain control of your Web3 ecosystem's financial resources with advanced treasury management tools. Track and optimize your treasury ensuring responsible allocation and growth of your community's funds. Maximise the value and sustainability of your ecosystem through automated reports and custom notifications.",
     image: "/assets/solution1.svg",
   },
 ];
