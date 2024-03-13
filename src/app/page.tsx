@@ -11,21 +11,20 @@ import { homeFaq } from "@/services/constants";
 import GetStarted from "@/components/GetStarted";
 import RoadmapMb from "@/components/home/RoadmapMb";
 
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-24">
-      <Header/>
-       <LandingMain/>
-       <TrustedBy />
-        <Solution/>
-      <Ecosystem/>
-      <Roadmap/>
-      <RoadmapMb/>
-       <Testimony/>
-        <FAQ faqData={homeFaq} type='home'/>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <Header />
+      <LandingMain />
+      <TrustedBy />
+      <Solution />
+      <Ecosystem />
+      <Roadmap />
+      <RoadmapMb />
+      <Testimony />
+      <FAQ faqData={homeFaq} type="home" />
       <GetStarted />
-      <Footer/>
+      <Footer />
     </main>
   );
 }

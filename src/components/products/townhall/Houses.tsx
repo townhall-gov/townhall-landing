@@ -233,10 +233,12 @@ const Houses = ({ Data = [] }: any) => {
           ></motion.div>
         </AnimatePresence>
       </motion.div>
-        
+
+      <h1 className="text-2xl sm:text-4xl font-semibold text-center w-full min-w-[60px] sm:min-w-[200px] m-12">
+        {Data[CenterId].Name}
+      </h1>
 
       <div className=" flex justify-center items-center gap-2 sm:gap-8 z-10 ">
-
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -246,18 +248,23 @@ const Houses = ({ Data = [] }: any) => {
           }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.8 }}
-          className='w-8 h-8 relative'
+          className="w-8 h-8 relative"
           onClick={prevBtn}
         >
-         <Image
-					width={20}
-					height={20}
-					className='relative flex-[0_0_auto]'
-					alt='Frame'
-					src='/assets/arrowLeft.svg'
-				/>
+          <Image
+            width={20}
+            height={20}
+            className="relative flex-[0_0_auto]"
+            alt="Frame"
+            src="/assets/arrowLeft.svg"
+          />
         </motion.button>
-        <h1 className="text-2xl sm:text-4xl font-semibold text-center w-full min-w-[60px] sm:min-w-[200px] m-12">{Data[CenterId].Name}</h1>
+        <SliderNavs
+          active={CenterId + 1}
+          total={Data.length}
+          next={nextBtn}
+          prev={prevBtn}
+        />
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -267,16 +274,16 @@ const Houses = ({ Data = [] }: any) => {
           }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.8 }}
-          className='w-8 h-8 relative'
+          className="w-8 h-8 relative"
           onClick={nextBtn}
         >
-         <Image
-					width={20}
-					height={20}
-					className='relative flex-[0_0_auto]'
-					alt='Frame'
-					src='/assets/arrowRight.svg'
-				/>
+          <Image
+            width={20}
+            height={20}
+            className="relative flex-[0_0_auto]"
+            alt="Frame"
+            src="/assets/arrowRight.svg"
+          />
         </motion.button>
       </div>
     </motion.div>

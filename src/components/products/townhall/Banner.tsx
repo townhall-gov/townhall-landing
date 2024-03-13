@@ -1,11 +1,34 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Banner = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const threshold = 800; // Adjust threshold as needed
+
+      if (scrollTop > threshold) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="w-full px-4 sm:px-8 lg:px-24 ">
-      <div className="w-full flex flex-col items-center relative rounded-3xl h-[40vh] md:h-[80vh]">
+    <div className="w-full px-4 h-screen sm:px-8 lg:px-24 ">
+      <div className="w-full flex flex-col items-center relative mt-24 rounded-3xl h-[40vh] md:h-[76vh] overflow-hidden">
         <Image
           src="/assets/townhallBanner.png"
           fill
@@ -34,9 +57,16 @@ const Banner = () => {
           We are focused on improving participation and governance in web3
           ecosystem
         </p>
-        <Button size="lg" className="relative audiowide-bold z-20">
-          Launch App
-        </Button>
+        <motion.div
+          initial={{ y: 0 }}
+          animate={{ y: isScrolled ? "100%" : 0 }}
+          transition={{ type: "spring", damping: 25, stiffness: 120 }}
+          style={{ position: "fixed", bottom: 0 }}
+        >
+          <Button size="lg" className="relative audiowide-bold z-20">
+            Launch App
+          </Button>
+        </motion.div>
       </div>
       <div className="flex flex-col items-center mt-12">
         <h3>Integrated with</h3>

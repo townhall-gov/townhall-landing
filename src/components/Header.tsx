@@ -105,14 +105,18 @@ const Header: React.FC = () => {
                                 <div className=" font-semibold text-white text-sm whitespace-nowrap">
                                   {item.title}
                                 </div>
-                                {item.coming_soon ? <span className="rounded-full text-xs bg-destructive px-1.5">
-                                  Coming Soon
-                                </span> :<Image
-                                  src="/assets/arrow_right.svg"
-                                  alt="Logo"
-                                  width={16}
-                                  height={16}
-                                />}
+                                {item.coming_soon ? (
+                                  <span className="rounded-full text-xs bg-destructive px-1.5">
+                                    Coming Soon
+                                  </span>
+                                ) : (
+                                  <Image
+                                    src="/assets/arrow_right.svg"
+                                    alt="Logo"
+                                    width={16}
+                                    height={16}
+                                  />
+                                )}
                               </div>
                               <div className="w-fit  font-medium text-white text-xs  whitespace-nowrap">
                                 {item.desc}
