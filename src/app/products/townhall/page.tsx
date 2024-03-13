@@ -13,15 +13,15 @@ import Snapshots from "@/components/products/townhall/Snapshots";
 
 const townhall = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-24">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
       <Banner />
-      <Elevate/>
-      <VideoPlayer/>
-      <Snapshots/>
-      <Features/>
-      <Houses Data={housesList}/>
-      <Difference/>
+      <Elevate />
+      <VideoPlayer />
+      <Snapshots />
+      <Features />
+      <Houses Data={housesList} />
+      <Difference />
       <GetStarted />
       <Footer />
     </main>
