@@ -20,7 +20,7 @@ const Features = () => {
 					imageMain="/assets/Discussion.svg"
 				/>
 			</div>
-			<div className="hidden md:flex  w-full justify-center items-center overflow-hidden blur-md">
+			{/* <div className="hidden md:flex  w-full justify-center items-center overflow-hidden blur-md">
 				<Card2
 					title="Delegation"
 					imgClassName="size-full absolute -right-72 bottom-0 z-10"
@@ -38,7 +38,7 @@ const Features = () => {
 					description="Empower community participation by allowing voting rights delegation. Ensure every voice is represented in key decisions."
 					imageMain="/assets/Delegation.svg"
 				/>
-			</div>
+			</div> */}
 			{/* <div className="flex flex-col md:grid md:grid-cols-12 h-full w-full justify-center items-center gap-8 blur-md">
 				<Card1
 					title="Bounties"
