@@ -20,7 +20,7 @@ const infrastructure = () => {
 			<div className="w-screen flex flex-col items-center justify-center relative -bottom-8">
 				<Features />
 				{/* <Customize /> */}
-				<GetInfraStarted />
+				{/* <GetInfraStarted /> */}
 				<ComingSoon />
 			</div>
 			<div className="bg-[#2F45C6] relative pb-6  w-full">
