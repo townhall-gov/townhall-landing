@@ -25,9 +25,11 @@ const LandingMain = () => {
 						</p>
 					</div>
 					<div className="inline-flex  items-center gap-4 relative">
-						<Button className="audiowide-bold" size="lg">
-							Launch App
-						</Button>
+						<Link href="https://app.townhallgov.com">
+							<Button className="audiowide-bold" size="lg">
+								Launch App
+							</Button>
+						</Link>
 						<Link href="https://calendly.com/bhavyabatra/30min">
 							<Button size="lg" variant="secondary">
 								Book Demo
