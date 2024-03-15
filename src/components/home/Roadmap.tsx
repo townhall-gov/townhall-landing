@@ -84,7 +84,11 @@ const Roadmap = () => {
 						<Card
 							date="Oct-Dev 24"
 							quarter="Q4"
-							points={[]}
+							points={[
+								'Custom voting modules',
+								'Custom themes & governance platform',
+								'OOB Management Tools'
+							]}
 							imgSrc="/assets/Cone-1.svg"
 							isActive={false}
 							title="Governance Kit SDK"

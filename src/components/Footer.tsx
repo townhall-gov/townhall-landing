@@ -16,10 +16,9 @@ const Footer = () => {
 							src="/logo_full.svg"
 						/>
 						<p className="relative self-stretch text-center sm:text-left [font-family:'Poppins-SemiBold',Helvetica]  text-white text-lg sm:text-2xl leading-[normal]">
-							{' '}
-							Ut enim ad minim veniam,{' '}
+							Simplifying DAO management{' '}
 							<br className="hidden sm:block" />
-							quis nostrud exercitation.
+							and Governance
 						</p>
 					</div>
 					<div className="inline-flex flex-wrap justify-between items-start gap-y-16 gap-x-12 sm:gap-16 relative flex-[0_0_auto]">

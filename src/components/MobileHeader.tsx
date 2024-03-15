@@ -40,7 +40,7 @@ const MobileHeader = () => {
 							<AccordionItem value="item-1">
 								<AccordionTrigger>PRODUCTS</AccordionTrigger>
 								<AccordionContent>
-									<ul className="flex flex-col gap-4 p-2 w-60">
+									<ul className="flex flex-col gap-4 p-2 w-80">
 										{products.map((item) => (
 											<li key={item.key}>
 												<Link
@@ -60,16 +60,22 @@ const MobileHeader = () => {
 															<div className=" font-semibold text-white text-sm whitespace-nowrap">
 																{item.title}
 															</div>
-															<Image
-																src="/assets/arrow_right.svg"
-																alt="Logo"
-																width={16}
-																height={16}
-															/>
+															{item.coming_soon ? (
+																<span className="rounded-full text-xs bg-destructive px-1.5">
+																	Coming Soon
+																</span>
+															) : (
+																<Image
+																	src="/assets/arrow_right.svg"
+																	alt="Logo"
+																	width={16}
+																	height={16}
+																/>
+															)}
 														</div>
-														<div className="w-fit  font-medium text-white text-xs  whitespace-nowrap">
+														{/* <div className="w-fit  font-medium text-white text-xs  whitespace-nowrap">
 															{item.desc}
-														</div>
+														</div> */}
 													</div>
 												</Link>
 											</li>

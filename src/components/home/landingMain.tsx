@@ -35,7 +35,7 @@ const LandingMain = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="items-center gap-8 inline-flex ">
+				{/* <div className="items-center gap-8 inline-flex ">
 					<div className="items-start inline-flex divide-x-2 divide-borderLight">
 						<div className="items-center  gap-1 sm:gap-3 pr-2 sm:pr-6 inline-flex">
 							<div className="flex ">
@@ -74,7 +74,7 @@ const LandingMain = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 			<div className="col-span-12 md:col-span-5 m-12 ">
 				<Image

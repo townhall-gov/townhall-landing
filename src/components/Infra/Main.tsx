@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Main = () => {
 	return (
-		<section className="flex flex-col md:grid md:grid-cols-12 h-screen justify-between items-center overflow-hidden w-full  pl-8 md:pl-24">
+		<section className="flex flex-col md:grid md:grid-cols-12 h-screen justify-between items-center overflow-hidden w-full mt-24 md:mt-0 pl-8 md:pl-24">
 			<div className="col-span-6 inline-flex flex-col items-start relative">
 				<h1 className="text-4xl md:text-5xl font-semibold md:leading-6">
 					Governance that fits “You”

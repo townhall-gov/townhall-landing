@@ -92,7 +92,11 @@ const RoadmapMb = () => {
 					<Card
 						date="Oct-Dev 24"
 						quarter="Q4"
-						points={['Data', 'Releasing', 'Soon']}
+						points={[
+							'Custom voting modules',
+							'Custom themes & governance platform',
+							'OOB Management Tools'
+						]}
 						imgSrc="/assets/cone-1.svg"
 						isActive={false}
 					/>
