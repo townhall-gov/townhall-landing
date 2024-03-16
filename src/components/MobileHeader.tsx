@@ -164,7 +164,7 @@ const MobileHeader = () => {
 								/>
 							</div>
 						</Link>
-						<Link href="https://t.me/townhallgov">
+						<Link href="https://discord.gg/cp35EvU48b">
 							<div className="cursor-pointer flex items-center justify-center w-[40px] h-[40px] rounded-full socialbg_blue">
 								<Image
 									src="/assets/Discord.svg"
@@ -174,7 +174,7 @@ const MobileHeader = () => {
 								/>
 							</div>
 						</Link>
-						<Link href="https://discord.gg/cp35EvU48b">
+						<Link href="https://t.me/townhallgov">
 							<div className="cursor-pointer flex items-center justify-center w-[40px] h-[40px] rounded-full socialbg_lightBlue">
 								<Image
 									src="/assets/telegram.svg"

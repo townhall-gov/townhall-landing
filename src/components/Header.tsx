@@ -203,7 +203,7 @@ const Header: React.FC = () => {
 								</div>
 							</Link>
 							<Link
-								href="https://t.me/townhallgov"
+								href="https://discord.gg/cp35EvU48b"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -217,7 +217,7 @@ const Header: React.FC = () => {
 								</div>
 							</Link>
 							<Link
-								href="https://discord.gg/cp35EvU48b"
+								href="https://t.me/townhallgov"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -226,7 +226,7 @@ const Header: React.FC = () => {
 										src="/assets/telegram.svg"
 										width={24}
 										height={24}
-										alt="Discord"
+										alt="telegram"
 									/>
 								</div>
 							</Link>
