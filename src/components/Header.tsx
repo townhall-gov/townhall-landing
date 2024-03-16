@@ -18,10 +18,12 @@ import './style.css';
 import { products } from '@/services/constants';
 import MobileHeader from './MobileHeader';
 import { AnimatePresence, motion, useCycle } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 const Header: React.FC = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [open, cycleOpen] = useCycle(false, true);
+	const pathname = usePathname();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -78,14 +80,25 @@ const Header: React.FC = () => {
 								<NavigationMenuItem>
 									<Link href="/" legacyBehavior passHref>
 										<NavigationMenuLink
-											className={navigationMenuTriggerStyle()}
+											className={`${
+												pathname === '/' &&
+												'text-primary'
+											} ${navigationMenuTriggerStyle()}`}
 										>
 											HOME
 										</NavigationMenuLink>
 									</Link>
 								</NavigationMenuItem>
 								<NavigationMenuItem>
-									<NavigationMenuTrigger>
+									<NavigationMenuTrigger
+										className={
+											pathname ===
+												'/products/bountybird' ||
+											pathname === '/products/townhall'
+												? 'text-primary'
+												: ''
+										}
+									>
 										PRODUCTS
 									</NavigationMenuTrigger>
 									<NavigationMenuContent>
@@ -144,7 +157,11 @@ const Header: React.FC = () => {
 										passHref
 									>
 										<NavigationMenuLink
-											className={navigationMenuTriggerStyle()}
+											className={`${
+												pathname ===
+													'/infrastructure' &&
+												'text-primary'
+											} ${navigationMenuTriggerStyle()}`}
 										>
 											INFRASTRUCTURE
 										</NavigationMenuLink>
@@ -157,7 +174,10 @@ const Header: React.FC = () => {
 										passHref
 									>
 										<NavigationMenuLink
-											className={navigationMenuTriggerStyle()}
+											className={`${
+												pathname === '/contact' &&
+												'text-primary'
+											} ${navigationMenuTriggerStyle()}`}
 										>
 											CONTACT
 										</NavigationMenuLink>

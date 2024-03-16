@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -10,8 +12,10 @@ import {
 import { motion } from 'framer-motion';
 import { products } from '@/services/constants';
 import { Button } from './ui/button';
+import { usePathname } from 'next/navigation';
 
 const MobileHeader = () => {
+	const pathname = usePathname();
 	const itemVariants = {
 		closed: {
 			opacity: 0
@@ -29,7 +33,15 @@ const MobileHeader = () => {
 						variants={itemVariants}
 					>
 						<Link href="/" legacyBehavior passHref>
-							<h1 className="text-white">HOME</h1>
+							<h1
+								className={` ${
+									pathname === '/'
+										? 'text-primary'
+										: 'text-white'
+								}`}
+							>
+								HOME
+							</h1>
 						</Link>
 					</motion.div>
 					<motion.div
@@ -38,7 +50,16 @@ const MobileHeader = () => {
 					>
 						<Accordion type="single" collapsible className="w-full">
 							<AccordionItem value="item-1">
-								<AccordionTrigger>PRODUCTS</AccordionTrigger>
+								<AccordionTrigger
+									className={
+										pathname === '/products/bountybird' ||
+										pathname === '/products/townhall'
+											? 'text-primary'
+											: 'text-white'
+									}
+								>
+									PRODUCTS
+								</AccordionTrigger>
 								<AccordionContent>
 									<ul className="flex flex-col gap-4 p-2 w-80">
 										{products.map((item) => (
@@ -90,7 +111,15 @@ const MobileHeader = () => {
 						variants={itemVariants}
 					>
 						<Link href="/infrastructure" legacyBehavior passHref>
-							<h1 className="text-white">INFRASTRUCTURE</h1>
+							<h1
+								className={` ${
+									pathname === '/infrastructure'
+										? 'text-primary'
+										: 'text-white'
+								}`}
+							>
+								INFRASTRUCTURE
+							</h1>
 						</Link>
 					</motion.div>
 					<motion.div
@@ -98,7 +127,15 @@ const MobileHeader = () => {
 						variants={itemVariants}
 					>
 						<Link href="/contact" legacyBehavior passHref>
-							<h1 className="text-white">CONTACT</h1>
+							<h1
+								className={` ${
+									pathname === '/contact'
+										? 'text-primary'
+										: 'text-white'
+								}`}
+							>
+								CONTACT
+							</h1>
 						</Link>
 					</motion.div>
 				</nav>
