@@ -22,7 +22,7 @@ const Difference = () => {
 					/>
 				</div>
 			</div>
-			<div className="absolute -bottom-12  md:bottom-48 left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row items-center md:items-baseline w-full justify-evenly gap-4 md:gap-8">
+			<div className="absolute -bottom-12  md:bottom-48 left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row items-center md:items-top w-full justify-evenly gap-4 md:gap-8">
 				<Card
 					imgSrc="/assets/diff1.svg"
 					text="Gamified User friendly Interface"
@@ -49,9 +49,9 @@ const Card = ({
 	text: string;
 }): JSX.Element => {
 	return (
-		<div className="inline-flex flex-col items-center relative">
+		<div className="inline-flex flex-col items-center relative ">
 			<Image alt="Plant" src={imgSrc} width={200} height={200} />
-			<div className="relative w-[250px] [font-family:'Poppins-Regular',Helvetica] font-light text-white text-2xl flex flex-col items-center text-center">
+			<div className="relative w-[300px] md:min-h-[100px] poppins-light  font-extralight text-white text-2xl flex flex-col items-center text-center">
 				{ReactHTMLParser(text)}
 			</div>
 		</div>

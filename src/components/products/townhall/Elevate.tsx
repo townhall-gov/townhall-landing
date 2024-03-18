@@ -34,7 +34,7 @@ const Elevate = () => {
 						stronger, more inclusive Web3 community.
 					</p>
 				</div>
-				<div className="flex text-lg font-semibold items-center gap-2 justify-center md:justify-start self-stretch w-full text-[#FF796A]">
+				<div className="flex text-lg [font-family:'Outfit-Regular',Helvetica] items-center gap-2 justify-center md:justify-start self-stretch w-full text-[#FF796A]">
 					Partnered with{' '}
 					<Image
 						width={80}

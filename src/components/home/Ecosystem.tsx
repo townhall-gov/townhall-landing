@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { MouseEvent, useEffect, useState } from 'react';
 import { motion, useMotionValue, useAnimation } from 'framer-motion';
 import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const Card = ({ cardName, title }: { cardName: string; title?: string }) => {
 	const [isHovered, setIsHovered] = useState(false);
@@ -68,7 +69,7 @@ const Card = ({ cardName, title }: { cardName: string; title?: string }) => {
 
 	return (
 		<motion.div
-			className="relative w-[300px] h-[280px] md:w-[350px] md:h-[300px] flex flex-col justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden"
+			className="relative w-[250px] h-[230px] sm:w-[250px] sm:h-[230px] md:w-[300px] md:h-[280px] flex flex-col justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden"
 			onMouseMove={handleMouseMove}
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
@@ -81,27 +82,29 @@ const Card = ({ cardName, title }: { cardName: string; title?: string }) => {
 				className="z-10"
 				alt="Frame"
 				src={`/assets/${cardName}.svg`}
-				width={100}
+				width={80}
 				height={100}
 			/>
 			<div className="flex items-center z-10 gap-2 mt-4">
 				<Image
 					alt="Frame"
 					src={`/assets/${cardName}-text.svg`}
-					width={250}
+					width={220}
 					height={100}
 				/>
-				<motion.div
-					initial={{ opacity: 0, width: 0 }}
-					animate={IconControls}
-				>
-					<Image
-						alt="Frame"
-						src="/assets/arrow-sm-left.svg"
-						width={40}
-						height={40}
-					/>
-				</motion.div>
+				{cardName !== 'Treasure-Ease' && (
+					<motion.div
+						initial={{ opacity: 0, width: 0 }}
+						animate={IconControls}
+					>
+						<Image
+							alt="Frame"
+							src="/assets/arrow-sm-left.svg"
+							width={35}
+							height={35}
+						/>
+					</motion.div>
+				)}
 			</div>
 			<motion.h1
 				className="text-xl text-center font-light px-2 mt-4 z-10"
@@ -141,14 +144,18 @@ const Ecosystem = () => {
 	return (
 		<section className="md:mt-32 flex flex-col justify-center items-center gap-4">
 			<div className="hidden lg:flex justify-start lg:justify-center gap-8 items-center">
-				<Card
-					cardName="townhall-white"
-					title="Simplifying DAO management and Governance"
-				/>
-				<Card
-					cardName="Bounty-Bird"
-					title="Making Bounties Social and Rewarding"
-				/>
+				<Link href="/products/townhall">
+					<Card
+						cardName="townhall-white"
+						title="Simplifying DAO management and Governance"
+					/>
+				</Link>
+				<Link href="/products/townhall">
+					<Card
+						cardName="Bounty-Bird"
+						title="Making Bounties Social and Rewarding"
+					/>
+				</Link>
 				<Card
 					cardName="Treasure-Ease"
 					title="Simplifying treasury management and invoicing in Web3 Ecosystem"
@@ -171,8 +178,10 @@ const Ecosystem = () => {
 			<h1 className="text-3xl sm:text-6xl text-center font-semibold my-8 ">
 				Our Growing Ecosystem
 			</h1>
-
-			<div className="relative w-full py-8 md:py-20 gap-8 flex justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden">
+			<Link
+				href="/infrastructure"
+				className="relative w-full py-8 md:py-16 gap-8 flex justify-center items-center bg-[#ffffff18] rounded-[26px] shadow-[inset_-3.01px_3.01px_3.01px_#ffffff63,inset_2.01px_-2.01px_20px_#d6d6d62b] backdrop-blur-[74.43px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(74.43px)_brightness(100%)] overflow-hidden"
+			>
 				<Image
 					className="z-10"
 					alt="Frame"
@@ -183,7 +192,7 @@ const Ecosystem = () => {
 				<h1 className="text-2xl md:text-5xl font-semibold ">
 					Infrastructure
 				</h1>
-			</div>
+			</Link>
 		</section>
 	);
 };
