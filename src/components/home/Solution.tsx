@@ -15,11 +15,11 @@ const Solution: React.FC = () => {
 				</div>
 			</div>
 
-			<div className="col-span-2 flex flex-col justify-between md:p-4 my-24 ml-6">
+			<div className="col-span-2 flex flex-col justify-between md:p-4 ml-6 snap-mandatory">
 				{oneStopData.map((item, index) => (
 					<div
 						key={index}
-						className=" flex flex-col md:flex-row  justify-between w-full h-screen my-8 items-start md:items-center border-b md:border-none"
+						className=" flex flex-col md:flex-row  justify-between w-full h-screen my-8  pt-24 md:pt-0 items-center border-b md:border-none snap-center"
 					>
 						<div className="md:flex-1 lg:mr-24">
 							<h2 className="text-4xl text-destructive font-semibold mb-2">
@@ -27,7 +27,7 @@ const Solution: React.FC = () => {
 							</h2>
 							<p className="font-lg pr-4">{item.description}</p>
 						</div>
-						<div className="flex-1 relative left-12 size-[200px] md:size-[400px]">
+						<div className="flex-1 relative md:left-12 size-[200px] md:size-[400px]">
 							<Image
 								src={item.image}
 								alt={item.title}

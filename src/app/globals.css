@@ -1,69 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
- 
 @layer base {
-  :root {
-    --background: #111111;
-    --foreground: #ffffff;
+	:root {
+		--background: #111111;
+		--foreground: #ffffff;
 
-    --card: #ffffff;
-    --card-foreground: #e3b948;
+		--card: #ffffff;
+		--card-foreground: #e3b948;
 
-    --popover: #2E3236;
-    --popover-foreground: #ffffff;
+		--popover: #2e3236;
+		--popover-foreground: #ffffff;
 
-    --primary: #a3e440;
-    --primary-foreground: #d4c8fa;
+		--primary: #a3e440;
+		--primary-foreground: #d4c8fa;
 
-    --secondary: #adadad;
-    --secondary-foreground: #2d285b;
+		--secondary: #adadad;
+		--secondary-foreground: #2d285b;
 
-    --muted: #dededf;
-    --muted-foreground: #383a41;
+		--muted: #dededf;
+		--muted-foreground: #383a41;
 
-    --accent: #dededf;
-    --accent-foreground: #2d285b;
+		--accent: #dededf;
+		--accent-foreground: #2d285b;
 
-    --destructive: #38A1FF;
-    --destructive-foreground: #d4c8fa;
+		--destructive: #38a1ff;
+		--destructive-foreground: #d4c8fa;
 
-    --border: #35383B;
-    --border-light: #818080;
-    --input: #dad1e6;
-    --ring: #e3b948;
+		--border: #35383b;
+		--border-light: #818080;
+		--input: #dad1e6;
+		--ring: #e3b948;
 
-    --radius: 0.5rem;
-  }
+		--radius: 0.5rem;
+	}
 }
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
 
-  html {
-    scroll-snap-type: y proximity;
-    scroll-snap-stop: always;
-    scroll-behavior: smooth;
-  }
-  body {
-    @apply bg-background text-foreground;
-    
-  }
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	html {
+		scroll-snap-type: y proximity;
+		scroll-snap-stop: always;
+		scroll-behavior: smooth;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
 }
 
 .audiowide-regular {
-  font-family: "Audiowide", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'Audiowide', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .audiowide-bold {
-  font-family: "Audiowide", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+	font-family: 'Audiowide', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.poppins-thin {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.poppins-extralight {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.poppins-light {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.poppins-regular {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.outfit-600 {
+	font-family: 'Outfit', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
 }

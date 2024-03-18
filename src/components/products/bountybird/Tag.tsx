@@ -16,7 +16,7 @@ const Tag = () => {
 					<span className="text-destructive font-semibold">
 						@TheBountyBird
 					</span>{' '}
-					and use #create to Post a bounty.
+					and use #create to post a bounty.
 				</p>
 				<div className="items-center gap-4 inline-flex flex-col mb-8 md:flex-row relative">
 					<Link

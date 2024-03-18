@@ -23,10 +23,10 @@ const infrastructure = () => {
 				{/* <GetInfraStarted /> */}
 				<ComingSoon />
 			</div>
-			<div className="bg-[#2F45C6] relative pb-6  w-full">
-				{/* <FAQ faqData={InfraFaq} type="Infra" /> */}
-				<GetStarted />
-			</div>
+			{/* <div className="bg-[#2F45C6] relative pb-6  w-full"> */}
+			{/* <FAQ faqData={InfraFaq} type="Infra" /> */}
+			<GetStarted />
+			{/* </div> */}
 			<Footer />
 		</main>
 	);
