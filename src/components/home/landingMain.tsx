@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const LandingMain = () => {
 	return (
-		<section className="grid grid-rows md:grid-cols-12 h-screen justify-between items-center px-6 md:px-24 w-full">
+		<section className="grid grid-rows md:grid-cols-12 h-screen justify-between mt-12 md:mt-auto items-center px-6 md:px-24 w-full">
 			<div className="col-span-7 inline-flex flex-col items-start gap-12 relative">
 				<div className="flex-col items-start justify-start gap-8 inline-flex ">
 					<div className="flex-col items-start md:w-11/12 gap-3 inline-flex ">

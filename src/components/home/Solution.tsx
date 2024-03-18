@@ -15,7 +15,7 @@ const Solution: React.FC = () => {
 				</div>
 			</div>
 
-			<div className="col-span-2 flex flex-col justify-between md:p-4 ml-6 snap-mandatory">
+			<div className="col-span-2 flex flex-col justify-between md:p-4 ml-6 snap-proximity">
 				{oneStopData.map((item, index) => (
 					<div
 						key={index}

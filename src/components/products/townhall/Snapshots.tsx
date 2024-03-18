@@ -5,7 +5,7 @@ import React from 'react';
 
 const Snapshots = () => {
 	return (
-		<section className="flex flex-col gap-8 justify-between items-center md:mt-48  w-full p-8 md:p-24 ">
+		<section className="flex flex-col gap-8 justify-between items-center  mt-48  w-full p-8 md:p-24 ">
 			<div className="relative w-full h-full">
 				<div className="w-full h-[50vh] lg:h-[80vh] relative drop-shadow-[0_-100px_80px_#2E285650]">
 					<Image
