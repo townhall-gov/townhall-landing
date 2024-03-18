@@ -5,7 +5,7 @@ import { useState, useRef } from 'react';
 
 const VideoPlayer: React.FC = () => {
 	const videoRef = useRef<HTMLVideoElement>(null);
-	const [isPlaying, setIsPlaying] = useState(false);
+	const [isPlaying, setIsPlaying] = useState(true);
 
 	const togglePlay = () => {
 		if (videoRef.current) {
@@ -18,19 +18,28 @@ const VideoPlayer: React.FC = () => {
 		}
 	};
 
+	const handleMouseOver = () => {
+		setIsPlaying(true);
+		if (videoRef.current) videoRef.current.play();
+	};
+
+	const handleMouseOut = () => {
+		setIsPlaying(false);
+		if (videoRef.current) videoRef.current.pause();
+	};
+
 	return (
-		<div className="relative mx-8 md:mx-44 rounded-3xl mt-8 md:mt-24 overflow-hidden">
+		<div
+			onMouseOver={handleMouseOver}
+			onMouseOut={handleMouseOut}
+			className="relative mx-8 md:mx-44 rounded-3xl mt-8 md:mt-24 overflow-hidden"
+		>
 			<video
 				ref={videoRef}
 				className="w-full min-h-[250px] sm:min-h-[300px] md:min-h-[400px] object-contain"
 				controls={true}
-				// onClick={togglePlay}
 			>
 				<source src="/assets/townhall-video.mp4" type="video/mp4" />
-				{/* <source
-					src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-					type="video/mp4"
-				/> */}
 				Your browser does not support the video tag.
 			</video>
 

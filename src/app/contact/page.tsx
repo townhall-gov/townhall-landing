@@ -25,7 +25,7 @@ const contact = () => {
 						Townhall&apos;s innovative solution.
 					</p>
 				</div>
-				<div className="col-span-1 md:mr-24">
+				<div className="col-span-1 w-full md:mr-24">
 					<Form />
 				</div>
 			</div>

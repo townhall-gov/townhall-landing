@@ -49,32 +49,31 @@ const Banner = () => {
 					</p>
 				</div>
 				<Link
-					className="fixed bottom-24 z-20"
+					className="fixed hidden md:block bottom-24 z-20"
 					href="http://app.townhallgov.com"
 				>
-					<Button
-						size="lg"
-						className="hidden md:block audiowide-bold "
-					>
+					<Button size="lg" className=" audiowide-bold ">
 						Launch App
 					</Button>
 				</Link>
 			</div>
-			<div className="flex flex-col gap-4 mt-4 items-center md:hidden">
+			<div className="flex flex-col gap-4 mt-4 items-center md:hidden z-20">
 				<p className="relative  text-lg text-center font-light">
 					We are focused on improving participation and governance in
 					web3 ecosystem
 				</p>
-				<motion.div
+				{/* <motion.div
 					initial={{ y: 0 }}
 					animate={{ y: isScrolled ? '100%' : 0 }}
 					transition={{ type: 'spring', damping: 25, stiffness: 120 }}
 					style={{ position: 'fixed', bottom: 0 }}
-				>
-					<Button size="lg" className="relative audiowide-bold z-20">
+				> */}
+				<div className="fixed bottom-16 z-20">
+					<Button size="lg" className="relative audiowide-bold">
 						Launch Apps
 					</Button>
-				</motion.div>
+				</div>
+				{/* </motion.div> */}
 			</div>
 			<div className="flex flex-col items-center mt-12">
 				<h3>Integrated with</h3>
