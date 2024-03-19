@@ -17,7 +17,7 @@ const LandingMain = () => {
 							</span>{' '}
 							DAO Superapp
 						</p>
-						<p className="relative self-stretch [font-family:'Poppins-Regular',Helvetica] font-normal text-[#e2e2e2] text-sm md:text-xl md:leading-9">
+						<p className="relative self-stretch poppins-regular font-normal text-[#e2e2e2] text-sm md:text-xl md:leading-9">
 							Effortlessly manage your decentralized collective
 							with Townhall&apos;s unified platform for
 							governance, treasury, community, and
@@ -78,13 +78,12 @@ const LandingMain = () => {
 					</div>
 				</div> */}
 			</div>
-			<div className="col-span-12 md:col-span-5 m-12 ">
+			<div className="relative col-span-12 md:col-span-5 m-4 sm:m-12 size-3/4 md:size-[62vh] ">
 				<Image
 					className="object-contain"
 					style={{ filter: 'drop-shadow(-54px -20px 80px #2567a8)' }}
 					src="/assets/crystal.gif"
-					width="400"
-					height="400"
+					fill
 					alt="crystal"
 					loading="lazy"
 				/>

@@ -18,16 +18,21 @@ const Tag = () => {
 					</span>{' '}
 					and use #create to post a bounty.
 				</p>
-				<div className="items-center gap-4 inline-flex flex-col mb-8 md:flex-row relative">
+				<div className="items-center md:items-start gap-4 inline-flex flex-col mb-8 relative ">
 					<Link
 						href="https://hey.xyz/"
 						target="_blank"
 						rel="noreferrer"
+						className="w-3/4"
 					>
-						<Button className="audiowide-bold" size="lg">
+						<Button
+							variant="secondary"
+							className="audiowide-bold border-[#FF4869] text-[#FF4869] w-full"
+							size="lg"
+						>
 							<Image
 								className="mr-2"
-								src="/assets/lens.svg"
+								src="/assets/hey.svg"
 								alt="hey"
 								width={20}
 								height={20}
@@ -36,11 +41,37 @@ const Tag = () => {
 						</Button>
 					</Link>
 					<Link
+						href="https://hey.xyz/"
+						target="_blank"
+						rel="noreferrer"
+						className="w-3/4"
+					>
+						<Button
+							variant="secondary"
+							className="audiowide-bold border-[#975DFF] text-[#975DFF] w-full"
+							size="lg"
+						>
+							<Image
+								className="mr-2"
+								src="/assets/farcaster.svg"
+								alt="hey"
+								width={20}
+								height={20}
+							/>{' '}
+							Create Bounty on Farcaster
+						</Button>
+					</Link>
+					<Link
 						href="https://twitter.com"
 						target="_blank"
 						rel="noreferrer"
+						className="w-3/4"
 					>
-						<Button variant="secondary" size="lg">
+						<Button
+							variant="secondary"
+							className="w-full"
+							size="lg"
+						>
 							<Image
 								className="mr-2"
 								src="/assets/xIcon.svg"

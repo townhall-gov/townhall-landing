@@ -20,7 +20,7 @@ interface FaqListProps {
 
 const FAQ = ({ faqData, type }: FaqListProps) => {
 	return (
-		<div className="w-full p-4 sm:p-24 flex flex-col sm:grid sm:grid-cols-3 ">
+		<div className="w-full p-4 sm:p-24 sm:pb-0 flex flex-col sm:grid sm:grid-cols-3 ">
 			<h1 className="text-4xl sm:text-6xl font-semibold col-span-1 mr-4 mb-8 sm:mb-auto">
 				Frequently Asked Questions
 			</h1>
