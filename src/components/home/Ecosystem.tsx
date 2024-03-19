@@ -175,7 +175,7 @@ const Ecosystem = () => {
 					title="Simplifying treasury management and invoicing in Web3 Ecosystem"
 				/>
 			</div>
-			<h1 className="text-3xl sm:text-6xl text-center font-semibold my-8 ">
+			<h1 className="text-3xl sm:text-5xl text-center font-semibold my-8 ">
 				Our Growing Ecosystem
 			</h1>
 			<Link

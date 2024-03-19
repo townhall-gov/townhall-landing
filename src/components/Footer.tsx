@@ -80,8 +80,8 @@ const Footer = () => {
 								>
 									<button className="flex items-center gap-1.5 px-3.5 py-2 relative self-stretch w-full flex-[0_0_auto] rounded-full border border-solid border-[#414349]">
 										<Image
-											width={18}
-											height={18}
+											width={14}
+											height={14}
 											alt="twitter"
 											src="/assets/xIcon.svg"
 										/>
@@ -97,8 +97,8 @@ const Footer = () => {
 								>
 									<button className="flex items-center gap-1.5 px-3.5 py-2 relative self-stretch w-full flex-[0_0_auto] rounded-full border border-solid border-[#414349]">
 										<Image
-											width={20}
-											height={20}
+											width={18}
+											height={18}
 											alt="discord"
 											src="/assets/Discord.svg"
 										/>
@@ -114,8 +114,8 @@ const Footer = () => {
 								>
 									<button className="flex items-center gap-1.5 px-3.5 py-2 relative self-stretch w-full flex-[0_0_auto] rounded-full border border-solid border-[#414349]">
 										<Image
-											width={20}
-											height={20}
+											width={18}
+											height={18}
 											alt="discord"
 											src="/assets/telegram.svg"
 										/>

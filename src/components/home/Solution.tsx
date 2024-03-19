@@ -19,7 +19,7 @@ const Solution: React.FC = () => {
 				{oneStopData.map((item, index) => (
 					<div
 						key={index}
-						className=" flex flex-col md:flex-row  justify-between w-full h-screen my-8  pt-24 md:pt-0 items-center border-b md:border-none snap-center"
+						className=" flex flex-col md:flex-row  justify-between w-full h-screen my-8  pt-24 md:pt-0 items-center border-b md:border-none snap-align-none hover:snap-center"
 					>
 						<div className="md:flex-1 lg:mr-24">
 							<h2 className="text-4xl text-destructive font-semibold mb-2">

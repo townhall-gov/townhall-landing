@@ -77,6 +77,7 @@ const Form = () => {
 						id="message"
 						name="message"
 						value={formData.message}
+						rows={4}
 						onChange={handleChange}
 						placeholder="Hello..."
 					/>
