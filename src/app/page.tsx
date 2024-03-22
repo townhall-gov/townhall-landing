@@ -13,7 +13,7 @@ import RoadmapMb from '@/components/home/RoadmapMb';
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between">
+		<main className='flex min-h-screen flex-col items-center justify-between'>
 			<Header />
 			<LandingMain />
 			<TrustedBy />
@@ -22,7 +22,10 @@ export default function Home() {
 			<Roadmap />
 			<RoadmapMb />
 			{/* <Testimony /> */}
-			<FAQ faqData={homeFaq} type="home" />
+			<FAQ
+				faqData={homeFaq}
+				type='home'
+			/>
 			<GetStarted />
 			<Footer />
 		</main>
