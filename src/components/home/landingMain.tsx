@@ -16,11 +16,13 @@ const LandingMain = () => {
 						<p className='relative self-stretch poppins-regular font-normal text-[#e2e2e2] text-sm md:text-xl md:leading-9'>Effortlessly manage your decentralized collective with Townhall&apos;s unified platform for governance, treasury, community, and decision-making.</p>
 					</div>
 					<div className='inline-flex  items-center gap-4 relative'>
-						<Button
-							className='audiowide-bold'
-							size='lg'>
-							Launch App
-						</Button>
+						<Link href='https://app.townhallgov.com'>
+							<Button
+								className='audiowide-bold'
+								size='lg'>
+								Launch App
+							</Button>
+						</Link>
 						<Link href='https://calendly.com/bhavyabatra/30min'>
 							<Button
 								size='lg'
