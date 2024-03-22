@@ -6,32 +6,27 @@ import Link from 'next/link';
 
 const LandingMain = () => {
 	return (
-		<section className="grid grid-rows md:grid-cols-12 h-screen justify-between mt-12 md:mt-auto items-center px-6 md:px-24 w-full">
-			<div className="col-span-7 inline-flex flex-col items-start gap-12 relative">
-				<div className="flex-col items-start justify-start gap-8 inline-flex ">
-					<div className="flex-col items-start md:w-11/12 gap-3 inline-flex ">
-						<p className="relative font-semibold text-white  text-2xl sm:text-4xl md:text-6xl ">
-							Townhall: The{' '}
-							<span className="whitespace-nowrap">
-								All-in-One
-							</span>{' '}
-							DAO Superapp
+		<section className='md:grid grid-rows md:grid-cols-12 h-screen justify-between pt-24 items-baseline  md:mt-auto md:items-center px-6 md:px-24 w-full'>
+			<div className='col-span-7 inline-flex flex-col items-start gap-12 relative'>
+				<div className='flex-col items-start justify-start gap-8 inline-flex '>
+					<div className='flex-col items-start md:w-11/12 gap-3 inline-flex '>
+						<p className='relative font-semibold text-white  text-2xl sm:text-4xl md:text-6xl '>
+							Townhall: The <span className='whitespace-nowrap'>All-in-One</span> DAO Superapp
 						</p>
-						<p className="relative self-stretch poppins-regular font-normal text-[#e2e2e2] text-sm md:text-xl md:leading-9">
-							Effortlessly manage your decentralized collective
-							with Townhall&apos;s unified platform for
-							governance, treasury, community, and
-							decision-making.
-						</p>
+						<p className='relative self-stretch poppins-regular font-normal text-[#e2e2e2] text-sm md:text-xl md:leading-9'>Effortlessly manage your decentralized collective with Townhall&apos;s unified platform for governance, treasury, community, and decision-making.</p>
 					</div>
-					<div className="inline-flex  items-center gap-4 relative">
-						<Link href="https://app.townhallgov.com">
-							<Button className="audiowide-bold" size="lg">
+					<div className='inline-flex  items-center gap-4 relative'>
+						<Link href='https://app.townhallgov.com'>
+							<Button
+								className='audiowide-bold'
+								size='lg'>
 								Launch App
 							</Button>
 						</Link>
-						<Link href="https://calendly.com/bhavyabatra/30min">
-							<Button size="lg" variant="secondary">
+						<Link href='https://calendly.com/bhavyabatra/30min'>
+							<Button
+								size='lg'
+								variant='secondary'>
 								Book Demo
 							</Button>
 						</Link>
@@ -78,14 +73,14 @@ const LandingMain = () => {
 					</div>
 				</div> */}
 			</div>
-			<div className="relative col-span-12 md:col-span-5 m-4 sm:m-12 size-3/4 md:size-[62vh] ">
+			<div className='relative col-span-12 md:col-span-5 m-4 sm:m-12 size-full md:size-[62vh] '>
 				<Image
-					className="object-contain"
+					className='object-contain'
 					style={{ filter: 'drop-shadow(-54px -20px 80px #2567a8)' }}
-					src="/assets/crystal.gif"
+					src='/assets/crystal.gif'
 					fill
-					alt="crystal"
-					loading="lazy"
+					alt='crystal'
+					loading='lazy'
 				/>
 			</div>
 		</section>
