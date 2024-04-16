@@ -1,0 +1,149 @@
+import Image from 'next/image';
+import React from 'react';
+
+const Features = () => {
+	return (
+		<section className='w-full mt-48 overflow-hidden'>
+			<div className='flex flex-col py-24 border-b border-t bg-[#161616]'>
+				<h1 className='text-3xl ml-12 md:text-6xl w-full text-center md:text-left font-semibold mb-12'>Features</h1>
+			</div>
+			<div className='grid grid-cols-12 border-collapse w-full'>
+				<div className='col-span-5 flex p-8 flex-col justify-center border'>
+					<h1 className='text-3xl font-semibold'>Notifications</h1>
+					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+				</div>
+				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
+					<div className='grid grid-cols-12 w-full gap-4'>
+						<div className='col-span-6 p-4 rounded-2xl border'>
+							<h1>Lorem Ipsum</h1>
+							<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+						</div>
+						<div className='col-span-6 p-4 rounded-2xl border'>
+							<h1>Consequatur aut m</h1>
+							<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+						</div>
+					</div>
+					<div className='w-full p-4 rounded-2xl border'>
+						<h1>Reiciendis</h1>
+						<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+					</div>
+				</div>
+			</div>
+			<div className='grid grid-cols-12 border-collapse w-full'>
+				<div className='col-span-5 flex p-8 flex-col justify-center border'>
+					<h1 className='text-3xl font-semibold'>Analytics</h1>
+					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+				</div>
+				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
+					<div className='w-full relative h-96 rounded-2xl'>
+						<Image
+							src='/assets/treasurease/TEanalytics.png'
+							alt='analytics'
+							className='object-contain'
+							fill
+						/>
+					</div>
+					<div className='grid grid-cols-12 w-full gap-4'>
+						<div className='col-span-6 p-4 rounded-2xl border'>
+							<p className='text-secondary mt-2'>500+ research articles for in-depth understanding..</p>
+						</div>
+						<div className='col-span-6 p-4 rounded-2xl border'>
+							<h1>Consequatur aut m</h1>
+							<p className='text-secondary mt-2'>Visual aids and infographics to enhance comprehension.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className='grid grid-cols-12 border-collapse w-full'>
+				<div className='col-span-5 flex p-8 flex-col justify-center border'>
+					<h1 className='text-3xl font-semibold'>Categorisation</h1>
+					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+				</div>
+				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
+					<div className='grid grid-cols-12 w-full h-full gap-4'>
+						<div className='col-span-6 relative w-full h-full min-h-96 rounded-2xl'>
+							<Image
+								src='/assets/treasurease/TECatregory1.png'
+								alt='categorisation'
+								className='object-contain'
+								fill
+							/>
+						</div>
+						<div className='col-span-6 relative w-full min-h-96 rounded-2xl'>
+							<Image
+								src='/assets/treasurease/TECategory2.png'
+								alt='categorisation'
+								className='object-contain'
+								fill
+							/>
+						</div>
+					</div>
+					<div className='w-full p-4 rounded-2xl border'>
+						<h1>Reiciendis</h1>
+						<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+					</div>
+				</div>
+			</div>
+			<div className='grid grid-cols-12 border-collapse w-full'>
+				<div className='col-span-5 flex p-8 flex-col justify-center border'>
+					<h1 className='text-3xl font-semibold'>Invoice</h1>
+					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+				</div>
+				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
+					<div className='grid grid-cols-12 w-full h-full gap-4'>
+						<div className='col-span-6 relative w-full h-full min-h-96 rounded-2xl'>
+							<Image
+								src='/assets/treasurease/TEInvoice1.png'
+								alt='categorisation'
+								className='object-contain'
+								fill
+							/>
+						</div>
+						<div className='col-span-6 p-4 flex flex-col justify-center rounded-2xl border'>
+							<h1>Lorem Ipsum</h1>
+							<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className='grid grid-cols-12 border-collapse w-full'>
+				<div className='col-span-5 flex p-8 flex-col justify-center border'>
+					<h1 className='text-3xl font-semibold'>Mini-Apps</h1>
+					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+				</div>
+				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
+					<div className='grid grid-cols-12 w-full h-full gap-4'>
+						<div className='col-span-6 relative w-full h-full min-h-96 rounded-2xl'>
+							<Image
+								src='/assets/treasurease/TECatregory1.png'
+								alt='categorisation'
+								className='object-contain'
+								fill
+							/>
+						</div>
+						<div className='col-span-6 relative w-full min-h-96 rounded-2xl'>
+							<Image
+								src='/assets/treasurease/TECategory2.png'
+								alt='categorisation'
+								className='object-contain'
+								fill
+							/>
+						</div>
+					</div>
+					<div className='grid grid-cols-12 w-full gap-4'>
+						<div className='col-span-6 p-4 rounded-2xl border'>
+							<h1>Lorem Ipsum</h1>
+							<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+						</div>
+						<div className='col-span-6 p-4 rounded-2xl border'>
+							<h1>Consequatur aut m</h1>
+							<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+};
+
+export default Features;

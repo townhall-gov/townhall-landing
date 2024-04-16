@@ -16,7 +16,7 @@ export const products = [
 	{
 		key: 3,
 		title: 'TreasurEase',
-		link: '',
+		link: '/products/treasurease',
 		logo: '/assets/treasurEase.svg',
 		desc: 'Lorem ipsum dolor sit',
 		coming_soon: true
@@ -43,13 +43,7 @@ export const homeFaq = [
 	{
 		question: 'What are Houses in Townhall and what is their purpose?',
 		answer: 'Houses are the central hubs or spaces within Townhall that are created for each DAO, protocol, or community using the platform. When you set up a House, it becomes the dedicated place for your organization to manage all governance activities like discussions, proposal voting, delegation, treasury analytics, and more. Key things to know about Houses:',
-		list: [
-			'Each DAO/project has its own customizable House',
-			'Houses allow you to configure settings, voting models, rules',
-			"All governance processes happen within your organization's House",
-			"Members can easily join and participate in a House's activities",
-			'Multiple Houses can represent sub-groups/divisions if needed'
-		]
+		list: ['Each DAO/project has its own customizable House', 'Houses allow you to configure settings, voting models, rules', "All governance processes happen within your organization's House", "Members can easily join and participate in a House's activities", 'Multiple Houses can represent sub-groups/divisions if needed']
 	}
 ];
 
@@ -75,26 +69,22 @@ export const InfraFaq = [
 export const oneStopData = [
 	{
 		title: 'On-Chain and Off-Chain Voting',
-		description:
-			'Empower your community with secure on-chain and off-chain voting mechanisms, ensuring the integrity of every decision. Choose from 15+ Strategies available or create a custom one.',
+		description: 'Empower your community with secure on-chain and off-chain voting mechanisms, ensuring the integrity of every decision. Choose from 15+ Strategies available or create a custom one.',
 		image: '/assets/solution4.svg'
 	},
 	{
 		title: 'Integrate with Snapshot and Discourse',
-		description:
-			'Seamlessly integrate with Snapshot for existing proposals and Discourse to index discussions, expanding your governance capabilities without losing your data.',
+		description: 'Seamlessly integrate with Snapshot for existing proposals and Discourse to index discussions, expanding your governance capabilities without losing your data.',
 		image: '/assets/solution3.svg'
 	},
 	{
 		title: 'Create and Manage Bounties',
-		description:
-			'Incentivize contributions and reward community members for their efforts by efficiently creating and managing bounties.',
+		description: 'Incentivize contributions and reward community members for their efforts by efficiently creating and managing bounties.',
 		image: '/assets/solution2.svg'
 	},
 	{
 		title: 'Treasury Management',
-		description:
-			"Gain control of your Web3 ecosystem's financial resources with advanced treasury management tools. Track and optimize your treasury ensuring responsible allocation and growth of your community's funds. Maximise the value and sustainability of your ecosystem through automated reports and custom notifications.",
+		description: "Gain control of your Web3 ecosystem's financial resources with advanced treasury management tools. Track and optimize your treasury ensuring responsible allocation and growth of your community's funds. Maximise the value and sustainability of your ecosystem through automated reports and custom notifications.",
 		image: '/assets/solution1.svg'
 	}
 ];
