@@ -7,8 +7,8 @@ import BuiltButton from './BuiltButton';
 const Banner = () => {
 	return (
 		<div className='w-full px-4 h-screen sm:px-8 lg:px-24 '>
-			<div className='w-full flex flex-col items-center justify-center relative mt-24 rounded-3xl h-[40vh] md:h-[76vh] overflow-hidden bg-[#1C2028]'>
-				<div className='w-3/4 flex flex-col gap-4 justify-center items-center bg-[#191E23] bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg p-12'>
+			<div className='w-full flex flex-col items-center justify-center relative mt-24 rounded-3xl h-[40vh] md:h-[76vh] overflow-hidden bg-[url("/assets/treasurease/TEBanner.png")] bg-contain bg-no-repeat'>
+				<div className='w-3/4 flex flex-col gap-4 justify-center items-center rounded drop-shadow-lg p-12'>
 					<h1 className='relative font-semibold text-white text-center  text-2xl md:text-3xl lg:text-5xl'>
 						TreasureEase: Your gateway to the <br /> Ultimate MultiSig experience
 					</h1>
@@ -42,8 +42,14 @@ const Banner = () => {
 						<p className='relative w-fit poppins-regular font-normal text-secondary text-xs'>Total Assets Managed</p>
 					</div>
 				</div>
-				<div className='absolute bottom-0 right-24'>
-					<BuiltButton />
+				<div className='absolute bottom-0 right-48'>
+					{/* <BuiltButton /> */}
+					<Image
+						src='/assets/treasurease/TEBuilt.png'
+						width={350}
+						height={400}
+						alt='safe'
+					/>
 				</div>
 			</div>
 		</div>

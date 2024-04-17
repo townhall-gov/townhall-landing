@@ -9,7 +9,13 @@ const Features = () => {
 			</div>
 			<div className='grid grid-cols-12 border-collapse w-full'>
 				<div className='col-span-5 flex p-8 flex-col justify-center border'>
-					<h1 className='text-3xl font-semibold'>Notifications</h1>
+					<Image
+						src='/assets/treasurease/TEIcon3.svg'
+						alt='categorisation'
+						width={40}
+						height={40}
+					/>
+					<h1 className='text-3xl mt-3 font-semibold'>Notifications</h1>
 					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 				</div>
 				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
@@ -31,7 +37,13 @@ const Features = () => {
 			</div>
 			<div className='grid grid-cols-12 border-collapse w-full'>
 				<div className='col-span-5 flex p-8 flex-col justify-center border'>
-					<h1 className='text-3xl font-semibold'>Analytics</h1>
+					<Image
+						src='/assets/treasurease/TEIcon4.svg'
+						alt='categorisation'
+						width={40}
+						height={40}
+					/>
+					<h1 className='text-3xl mt-3 font-semibold'>Analytics</h1>
 					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 				</div>
 				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
@@ -56,7 +68,13 @@ const Features = () => {
 			</div>
 			<div className='grid grid-cols-12 border-collapse w-full'>
 				<div className='col-span-5 flex p-8 flex-col justify-center border'>
-					<h1 className='text-3xl font-semibold'>Categorisation</h1>
+					<Image
+						src='/assets/treasurease/TEIcon5.svg'
+						alt='categorisation'
+						width={40}
+						height={40}
+					/>
+					<h1 className='text-3xl mt-3 font-semibold'>Categorisation</h1>
 					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 				</div>
 				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
@@ -86,7 +104,13 @@ const Features = () => {
 			</div>
 			<div className='grid grid-cols-12 border-collapse w-full'>
 				<div className='col-span-5 flex p-8 flex-col justify-center border'>
-					<h1 className='text-3xl font-semibold'>Invoice</h1>
+					<Image
+						src='/assets/treasurease/TEIcon2.svg'
+						alt='categorisation'
+						width={40}
+						height={40}
+					/>
+					<h1 className='text-3xl mt-3 font-semibold'>Invoice</h1>
 					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 				</div>
 				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
@@ -108,7 +132,13 @@ const Features = () => {
 			</div>
 			<div className='grid grid-cols-12 border-collapse w-full'>
 				<div className='col-span-5 flex p-8 flex-col justify-center border'>
-					<h1 className='text-3xl font-semibold'>Mini-Apps</h1>
+					<Image
+						src='/assets/treasurease/TEIcon1.svg'
+						alt='categorisation'
+						width={40}
+						height={40}
+					/>
+					<h1 className='text-3xl mt-3 font-semibold'>Mini-Apps</h1>
 					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 				</div>
 				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>

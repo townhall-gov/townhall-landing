@@ -6,7 +6,18 @@ import useMeasure from 'react-use-measure';
 import { animate, useMotionValue, motion } from 'framer-motion';
 
 const Networks: React.FC = () => {
-	const images = ['/assets/dot.svg', '/assets/astar.svg', '/assets/apillon.svg'];
+	const images = [
+		{ logo: '/assets/networks/eth.svg', name: 'Ethereum' },
+		{ logo: '/assets/networks/Polygon.svg', name: 'Polygon' },
+		// { logo: '/assets/networks/.svg', name: 'Gnosis' },
+		{ logo: '/assets/networks/bnb.svg', name: 'BNB' },
+		{ logo: '/assets/networks/goreli.svg', name: 'Goerli' },
+		{ logo: '/assets/networks/Astar.svg', name: 'Astar' },
+		{ logo: '/assets/networks/moonbeam.svg', name: 'Moonbeam' },
+		{ logo: '/assets/networks/Arbitrum.svg', name: 'Arbitrum' },
+		{ logo: '/assets/networks/optimism.svg', name: 'Optimism' }
+		// { logo: '/assets/networks/.svg', name: 'Zeta' }
+	];
 
 	let [ref, { width }] = useMeasure();
 
@@ -40,11 +51,12 @@ const Networks: React.FC = () => {
 							key={idx}
 							className='min-w-52 lg:min-w-72 flex justify-center items-center'>
 							<Image
-								src={item}
+								src={item.logo}
 								alt='logo'
-								width={120}
-								height={50}
+								width={24}
+								height={24}
 							/>
+							<h3 className='text-secondary ml-2'>{item.name}</h3>
 						</div>
 					))}
 				</motion.div>
