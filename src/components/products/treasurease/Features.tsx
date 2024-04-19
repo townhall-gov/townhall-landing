@@ -78,8 +78,8 @@ const Features = () => {
 					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 				</div>
 				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
-					<div className='grid grid-cols-12 w-full h-full gap-4'>
-						<div className='col-span-6 relative w-full h-full min-h-96 rounded-2xl'>
+					<div className='grid grid-cols-12 w-full h-full min-h-[34rem] gap-4'>
+						<div className='col-span-6 relative w-full h-full rounded-2xl'>
 							<Image
 								src='/assets/treasurease/TECatregory1.png'
 								alt='categorisation'
@@ -87,7 +87,7 @@ const Features = () => {
 								fill
 							/>
 						</div>
-						<div className='col-span-6 relative w-full min-h-96 rounded-2xl'>
+						<div className='col-span-6 relative w-full rounded-2xl'>
 							<Image
 								src='/assets/treasurease/TECategory2.png'
 								alt='categorisation'
@@ -142,18 +142,18 @@ const Features = () => {
 					<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 				</div>
 				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
-					<div className='grid grid-cols-12 w-full h-full gap-4'>
-						<div className='col-span-6 relative w-full h-full min-h-96 rounded-2xl'>
+					<div className='grid grid-cols-12 w-full h-full min-h-[34rem] gap-4'>
+						<div className='col-span-6 relative w-full h-fullrounded-2xl'>
 							<Image
-								src='/assets/treasurease/TECatregory1.png'
+								src='/assets/treasurease/TEMini1.png'
 								alt='categorisation'
 								className='object-contain'
 								fill
 							/>
 						</div>
-						<div className='col-span-6 relative w-full min-h-96 rounded-2xl'>
+						<div className='col-span-6 relative w-full h-full rounded-2xl'>
 							<Image
-								src='/assets/treasurease/TECategory2.png'
+								src='/assets/treasurease/TEMini2.png'
 								alt='categorisation'
 								className='object-contain'
 								fill
