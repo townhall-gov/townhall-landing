@@ -85,9 +85,7 @@ const TempHero = () => {
 				featureEls?.forEach((featureEl) => {
 					// Not optimized yet, I know
 					const rect = featureEl.getBoundingClientRect();
-					// @ts-ignore
 					featureEl.style.setProperty('--x', ev.clientX - rect.left);
-					// @ts-ignore
 					featureEl.style.setProperty('--y', ev.clientY - rect.top);
 				});
 			});

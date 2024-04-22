@@ -39,7 +39,7 @@ const Networks: React.FC = () => {
 	}, [xTranslation, width]);
 
 	return (
-		<div className='overflow-hidden w-full  mb-12'>
+		<div className='networks-container  w-full  mb-12'>
 			<div className='absolute left-0 flex flex-col pt-2 md:pt-0 gap-4 md:flex-row items-center overflow-hidden border-t border-b bg-[#272A2E] border-[#636363] w-full h-20 md:h-12'>
 				<h4 className='text-secondary text-sm sm:text-lg whitespace-nowrap pl-auto md:pl-32 bg-[#272A2E] z-10 px-12'>Networks</h4>
 				<motion.div

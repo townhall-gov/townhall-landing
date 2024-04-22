@@ -28,14 +28,14 @@ const Video: React.FC = () => {
 		if (videoRef.current) videoRef.current.pause();
 	};
 	return (
-		<div className='w-3/4 mx-8 md:mx-44 flex flex-col justify-center items-center'>
-			<h1 className='text-2xl '>accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum excepturi sint praesentium voluptatum excepturi sint occaecati provident.</h1>
+		<div className='md:w-3/4 mx-8 md:mx-44 flex flex-col justify-center items-center'>
+			<h1 className='text-2xl text-center'>accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum excepturi sint praesentium voluptatum excepturi sint occaecati provident.</h1>
 			<div
 				onMouseOver={handleMouseOver}
 				onMouseOut={handleMouseOut}
 				className='relative w-full rounded-3xl mt-8 md:mt-24 overflow-hidden'>
 				<Image
-					src='/assets/treasurease/TEVideo.png'
+					src='/assets/treasurease/TEVideo.svg'
 					alt='treasurease'
 					width={500}
 					height={500}

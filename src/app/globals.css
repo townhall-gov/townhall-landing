@@ -110,3 +110,27 @@
 	font-weight: 500;
 	font-style: normal;
 }
+
+.banner-pillar-1::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: -50px;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	border-radius: 50%;
+	box-shadow: -20px 20px 0 #111111;
+}
+
+.banner-pillar-2::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: -50px;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	border-radius: 50%;
+	box-shadow: 20px 20px 0 #111111;
+}
