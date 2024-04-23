@@ -19,7 +19,7 @@ export const products = [
 		link: '/products/treasurease',
 		logo: '/assets/treasurEase.svg',
 		desc: 'Lorem ipsum dolor sit',
-		coming_soon: true
+		coming_soon: false
 	}
 ];
 
@@ -142,4 +142,17 @@ export const housesList = [
 		ImgSrc: '/assets/blockchain/statemine.svg',
 		Name: 'Statemine'
 	}
+];
+
+export const networks = [
+	{ logo: '/assets/networks/eth.svg', name: 'Ethereum' },
+	{ logo: '/assets/networks/Polygon.svg', name: 'Polygon' },
+	// { logo: '/assets/networks/.svg', name: 'Gnosis' },
+	{ logo: '/assets/networks/bnb.svg', name: 'BNB' },
+	{ logo: '/assets/networks/goreli.svg', name: 'Goerli' },
+	{ logo: '/assets/networks/Astar.svg', name: 'Astar' },
+	{ logo: '/assets/networks/moonbeam.svg', name: 'Moonbeam' },
+	{ logo: '/assets/networks/Arbitrum.svg', name: 'Arbitrum' },
+	{ logo: '/assets/networks/optimism.svg', name: 'Optimism' }
+	// { logo: '/assets/networks/.svg', name: 'Zeta' }
 ];

@@ -22,7 +22,7 @@ const ComingSoon = () => {
 						height={36}
 						alt='soon'
 					/>
-					<h1 className='text-xl font-semibold'>on-chain treasury bonds</h1>
+					<h1 className='text-xl font-semibold'>On-chain treasury bonds</h1>
 				</div>
 				<div className='flex flex-col gap-4 items-center md:items-start justify-center'>
 					<Image

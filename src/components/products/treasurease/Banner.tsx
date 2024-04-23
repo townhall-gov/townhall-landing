@@ -20,14 +20,14 @@ const Banner = () => {
 						<p className='hidden md:block text-lg font-light'>We are focused on improving participation and governance in web3 ecosystem</p>
 					</div>
 					<div className='flex flex-wrap gap-4 justify-center mt-8 md:mt-auto items-center '>
-						<Link href='http://app.townhallgov.com'>
+						<Link href='https://treasurease.xyz'>
 							<Button
 								size='lg'
 								className=' audiowide-bold '>
 								Launch App
 							</Button>
 						</Link>
-						<Link href='https://calendly.com/bhavyabatra/30min'>
+						<Link href='https://docs.townhallgov.com'>
 							<Button
 								variant='secondary'
 								size='lg'>

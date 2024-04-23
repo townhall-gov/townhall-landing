@@ -4,21 +4,9 @@ import Image from 'next/image';
 import React, { useEffect } from 'react';
 import useMeasure from 'react-use-measure';
 import { animate, useMotionValue, motion } from 'framer-motion';
+import { networks } from '@/services/constants';
 
 const Networks: React.FC = () => {
-	const images = [
-		{ logo: '/assets/networks/eth.svg', name: 'Ethereum' },
-		{ logo: '/assets/networks/Polygon.svg', name: 'Polygon' },
-		// { logo: '/assets/networks/.svg', name: 'Gnosis' },
-		{ logo: '/assets/networks/bnb.svg', name: 'BNB' },
-		{ logo: '/assets/networks/goreli.svg', name: 'Goerli' },
-		{ logo: '/assets/networks/Astar.svg', name: 'Astar' },
-		{ logo: '/assets/networks/moonbeam.svg', name: 'Moonbeam' },
-		{ logo: '/assets/networks/Arbitrum.svg', name: 'Arbitrum' },
-		{ logo: '/assets/networks/optimism.svg', name: 'Optimism' }
-		// { logo: '/assets/networks/.svg', name: 'Zeta' }
-	];
-
 	let [ref, { width }] = useMeasure();
 
 	const xTranslation = useMotionValue(0);
@@ -46,7 +34,7 @@ const Networks: React.FC = () => {
 					className='flex items-center'
 					ref={ref}
 					style={{ x: xTranslation }}>
-					{[...images, ...images, ...images].map((item, idx) => (
+					{[...networks, ...networks, ...networks].map((item, idx) => (
 						<div
 							key={idx}
 							className='min-w-52 lg:min-w-72 flex justify-center items-center'>
