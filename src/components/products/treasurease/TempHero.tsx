@@ -58,8 +58,8 @@ const renderBoxes = (y: number) => {
 
 const TempHero = () => {
 	const [dimensions, setDimensions] = useState({
-		height: window.innerHeight,
-		width: window.innerWidth
+		height: window?.innerHeight,
+		width: window?.innerWidth
 	});
 
 	useEffect(() => {
@@ -85,8 +85,8 @@ const TempHero = () => {
 				featureEls?.forEach((featureEl) => {
 					// Not optimized yet, I know
 					const rect = featureEl.getBoundingClientRect();
-					featureEl.style.setProperty('--x', ev.clientX - rect.left);
-					featureEl.style.setProperty('--y', ev.clientY - rect.top);
+					(featureEl as any).style.setProperty('--x', (ev as any).clientX - rect.left);
+					(featureEl as any).style.setProperty('--y', (ev as any).clientY - rect.top);
 				});
 			});
 		}
