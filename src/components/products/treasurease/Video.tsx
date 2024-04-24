@@ -29,7 +29,7 @@ const Video: React.FC = () => {
 	};
 	return (
 		<div className='md:w-3/4 mx-8 md:mx-44 flex flex-col justify-center items-center'>
-			<h1 className='text-2xl text-center'>accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum excepturi sint praesentium voluptatum excepturi sint occaecati provident.</h1>
+			<h1 className='text-2xl text-center'>The ultimate web3 treasury management tool.</h1>
 			<div
 				onMouseOver={handleMouseOver}
 				onMouseOut={handleMouseOut}
