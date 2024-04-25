@@ -12,7 +12,7 @@ const Banner = () => {
 				<div className='absolute'>
 					<TempHero />
 				</div>
-				<div className='w-full flex flex-col items-center justify-center relative mt-24 z-10'>
+				<div className='w-full flex flex-col items-center justify-center relative md:mt-24 z-10'>
 					<div className='md:w-3/4 flex flex-col gap-4 justify-center items-center rounded drop-shadow-lg p-4 md:p-12'>
 						<h1 className='relative font-semibold text-white text-center  text-2xl md:text-3xl lg:text-5xl'>
 							TreasureEase: Your gateway to the <br className='hidden md:block' /> <span className='[text-shadow:_0_3px_16px_rgb(60_115_221)]'>Ultimate MultiSig </span> experience

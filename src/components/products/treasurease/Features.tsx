@@ -49,7 +49,7 @@ const Features = () => {
 				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
 					<div className='w-full relative h-48 md:h-96 rounded-2xl'>
 						<Image
-							src='/assets/treasurease/TEanalytics.svg'
+							src='/assets/treasurease/TEAnalytics.svg'
 							alt='analytics'
 							className='object-contain'
 							fill
