@@ -3,7 +3,7 @@ import React from 'react';
 
 const ComingSoon = () => {
 	return (
-		<section className='w-full flex flex-col justify-center items-center h-screen'>
+		<section className='w-full flex flex-col justify-center items-center mt-24 md:mt-auto h-screen'>
 			<h1 className=' text-5xl '>Coming Soon</h1>
 			<div className='w-full mt-8 border-t border-b flex flex-col md:flex-row justify-around items-center py-24 px-8 bg-[#1C1C1C]'>
 				<div className='flex flex-col gap-4 items-center md:items-start justify-center'>
