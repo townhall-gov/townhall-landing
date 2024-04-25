@@ -12,12 +12,9 @@ const getBox = (size: number, x: number, y: number) => {
 		<div
 			className='feature'
 			id='feature-id'
-			// className={`w-[80px] h-[80px] feature border border-[#1A2A42]`}
-			key={size}
-			// style={{ background: y === 6 && x === Math.ceil((window.innerWidth / 80) - 3) && 'radial-gradient(500px circle at 50%,rgba(21, 115, 254, 0.1),transparent 20%)' }}
-		>
+			key={size}>
 			<div className='feature-content flex justify-center items-center'>
-				{window.innerWidth > 640 && (
+				{typeof window !== 'undefined' && window.innerWidth > 640 && (
 					<>
 						{y === 12 && x === Math.ceil(window.innerWidth / 80) && (
 							<Image
@@ -48,7 +45,7 @@ const rowItems = [];
 const renderBoxes = (y: number) => {
 	let size = 40;
 	let arr = [];
-	while (size < window.innerWidth + 40) {
+	while (typeof window !== 'undefined' && size < window.innerWidth + 40) {
 		size += 40;
 		arr.push(getBox(size, arr.length, y));
 	}
@@ -58,8 +55,8 @@ const renderBoxes = (y: number) => {
 
 const TempHero = () => {
 	const [dimensions, setDimensions] = useState({
-		height: window?.innerHeight,
-		width: window?.innerWidth
+		height: typeof window !== 'undefined' ? window.innerHeight : 0,
+		width: typeof window !== 'undefined' ? window.innerWidth : 0
 	});
 
 	useEffect(() => {
