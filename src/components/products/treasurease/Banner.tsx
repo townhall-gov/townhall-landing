@@ -54,7 +54,7 @@ const Banner = () => {
 				<div className='w-full h-full flex z-10'>
 					<div className='banner-pillar-1 w-12 h-full rounded-t-full bg-[#111111] relative right-6 z-10' />
 					<Image
-						src='/assets/treasurease/TEBuilt.png'
+						src='/assets/treasurease/TEBuild.png'
 						width={350}
 						height={400}
 						alt='safe'
