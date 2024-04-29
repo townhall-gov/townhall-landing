@@ -77,19 +77,19 @@ const Features = () => {
 					<h1 className='text-3xl mt-3 font-semibold'>Categorisation</h1>
 					<p className='text-secondary mt-2'>Allow users to create and customize categories based on their specific needs and preferences.</p>
 				</div>
-				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
+				<div className='col-span-7 flex flex-col h-65 items-center gap-4 border p-12'>
 					<div className='grid grid-cols-12 w-full h-full min-h-48 md:min-h-[34rem] gap-4'>
-						<div className='col-span-6 relative w-full h-full rounded-2xl'>
+						<div className='col-span-6 relative w-[100%] h-full rounded-2xl'>
 							<Image
-								src='/assets/treasurease/TECatregory1.png'
+								src='/assets/treasurease/TECategory1.svg'
 								alt='categorisation'
 								className='object-contain'
 								fill
 							/>
 						</div>
-						<div className='col-span-6 relative w-full rounded-2xl'>
+						<div className='col-span-6 relative w-[83%] h-full rounded-2xl'>
 							<Image
-								src='/assets/treasurease/TECategory2.png'
+								src='/assets/treasurease/TECategory2.svg'
 								alt='categorisation'
 								className='object-contain'
 								fill
@@ -141,9 +141,9 @@ const Features = () => {
 					<h1 className='text-3xl mt-3 font-semibold'>Mini-Apps</h1>
 					<p className='text-secondary mt-2'>Treasurease.xyz will expand its capabilities by supporting all Safe Mini Apps.</p>
 				</div>
-				<div className='col-span-7 flex flex-col items-center gap-4 border p-12'>
+				<div className='col-span-7 flex flex-col items-center gap-4 border '>
 					<div className='flex flex-col md:grid md:grid-cols-12 w-full h-full  gap-4'>
-						<div className='col-span-6 w-full h-full'>
+						{/* <div className='col-span-6 w-full h-full'>
 							<div className=' relative w-full h-full min-h-[28rem] rounded-2xl'>
 								<Image
 									src='/assets/treasurease/TEMini1.svg'
@@ -152,12 +152,12 @@ const Features = () => {
 									fill
 								/>
 							</div>
-							{/* <div className='block md:hidden p-4 mt-4  rounded-2xl border'>
+							<div className='block md:hidden p-4 mt-4  rounded-2xl border'>
 								<h1>Lorem Ipsum</h1>
 								<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-							</div> */}
-						</div>
-						<div className='col-span-6 w-full h-full'>
+							</div>
+						</div> */}
+						{/* <div className='col-span-6 w-full h-full'>
 							<div className='relative w-full h-full min-h-[28rem] rounded-2xl'>
 								<Image
 									src='/assets/treasurease/TEMini2.svg'
@@ -166,22 +166,19 @@ const Features = () => {
 									fill
 								/>
 							</div>
-							{/* <div className='block md:hidden p-4 mt-4 rounded-2xl border'>
+							<div className='block md:hidden p-4 mt-4 rounded-2xl border'>
 								<h1>Consequatur aut m</h1>
 								<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-							</div> */}
-						</div>
+							</div>
+						</div> */}
 					</div>
-					{/* <div className='hidden md:grid grid-cols-12 w-full gap-4'>
-						<div className='col-span-6 p-4 rounded-2xl border'>
-							<h1>Lorem Ipsum</h1>
-							<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-						</div>
-						<div className='col-span-6 p-4 rounded-2xl border'>
-							<h1>Consequatur aut m</h1>
-							<p className='text-secondary mt-2'>Reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-						</div>
-					</div> */}
+					<Image
+						src='/assets/treasurease/TESoon.svg'
+						alt='categorisation'
+						className='object-contain'
+						width={550}
+						height={520}
+					/>
 				</div>
 			</div>
 		</section>
