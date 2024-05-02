@@ -82,7 +82,7 @@ const Roadmap = () => {
 							title="Modular Integrations"
 						/>
 						<Card
-							date="Oct-Dev 24"
+							date="Oct-Dec 24"
 							quarter="Q4"
 							points={[
 								'Custom voting modules',
