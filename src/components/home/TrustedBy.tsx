@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React, { useEffect } from "react";
-import useMeasure from "react-use-measure";
-import { animate, useMotionValue, motion } from "framer-motion";
+import Image from 'next/image';
+import React, { useEffect } from 'react';
+import useMeasure from 'react-use-measure';
+import { animate, useMotionValue, motion } from 'framer-motion';
 
 const TrustedBy: React.FC = () => {
-	const images = [ "/assets/dot.svg", "/assets/astar.svg", "/assets/apillon.svg"];
+	const images = ['/assets/dot.svg', '/assets/astar.svg', '/assets/apillon.svg'];
 
 	let [ref, { width }] = useMeasure();
 
@@ -17,24 +17,34 @@ const TrustedBy: React.FC = () => {
 		let finalPosition = -width / 3 - 9;
 
 		controls = animate(xTranslation, [0, finalPosition], {
-			ease: "linear",
+			ease: 'linear',
 			duration: 20,
 			repeat: Infinity,
-			repeatType: "loop",
-			repeatDelay: 0,
+			repeatType: 'loop',
+			repeatDelay: 0
 		});
 
 		return controls.stop;
 	}, [xTranslation, width]);
 
 	return (
-		<div className="overflow-hidden w-full mt-24 mb-12">
-			<div className='absolute left-0 flex flex-col pt-2 md:pt-0 gap-4 md:flex-row items-center overflow-hidden border-t border-b bg-[#272A2E] border-[#636363] w-full h-20 md:h-12'>
-			<h4 className='text-secondary text-sm sm:text-lg whitespace-nowrap pl-auto md:pl-32 bg-[#272A2E] z-10 px-12'>Trusted By</h4>
-				<motion.div className="flex items-center" ref={ref} style={{ x: xTranslation }}>
+		<div className='overflow-hidden w-full mt-24 mb-12'>
+			<div className='absolute left-0 flex flex-col pt-2 md:pt-0 gap-4 md:flex-row items-center overflow-hidden border-t border-b bg-[#272A2E] border-[#636363] w-full h-24 md:h-12'>
+				<h4 className='text-secondary text-sm sm:text-lg whitespace-nowrap pl-auto md:pl-32 bg-[#272A2E] z-10 px-12'>Trusted By</h4>
+				<motion.div
+					className='flex items-center'
+					ref={ref}
+					style={{ x: xTranslation }}>
 					{[...images, ...images, ...images].map((item, idx) => (
-						<div key={idx} className='min-w-52 lg:min-w-72 flex justify-center items-center'>
-							  <Image src={item} alt='logo' width={120} height={50} />
+						<div
+							key={idx}
+							className='min-w-52 lg:min-w-72 flex justify-center items-center'>
+							<Image
+								src={item}
+								alt='logo'
+								width={120}
+								height={50}
+							/>
 						</div>
 					))}
 				</motion.div>
