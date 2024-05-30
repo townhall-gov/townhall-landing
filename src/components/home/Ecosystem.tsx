@@ -74,19 +74,18 @@ const Card = ({ cardName, title }: { cardName: string; title?: string }) => {
 					width={220}
 					height={100}
 				/>
-				{cardName !== 'Treasure-Ease' && (
-					<motion.div
-						initial={{ opacity: 0, width: 0 }}
-						animate={IconControls}
-						className='hidden md:block'>
-						<Image
-							alt='Frame'
-							src='/assets/arrow-sm-left.svg'
-							width={35}
-							height={35}
-						/>
-					</motion.div>
-				)}
+
+				<motion.div
+					initial={{ opacity: 0, width: 0 }}
+					animate={IconControls}
+					className='hidden md:block'>
+					<Image
+						alt='Frame'
+						src='/assets/arrow-sm-left.svg'
+						width={35}
+						height={35}
+					/>
+				</motion.div>
 			</div>
 			<motion.h1
 				className='text-xl text-center font-light px-2 mt-4 z-10'
@@ -161,16 +160,15 @@ const CardMb = ({ cardName, title }: { cardName: string; title?: string }) => {
 					width={150}
 					height={100}
 				/>
-				{cardName !== 'Treasure-Ease' && (
-					<div className='hidden md:block'>
-						<Image
-							alt='Frame'
-							src='/assets/arrow-sm-left.svg'
-							width={35}
-							height={35}
-						/>
-					</div>
-				)}
+
+				<div className='hidden md:block'>
+					<Image
+						alt='Frame'
+						src='/assets/arrow-sm-left.svg'
+						width={35}
+						height={35}
+					/>
+				</div>
 			</div>
 			<h1 className='text-base text-center font-light px-2 mt-4 z-10'>{title}</h1>
 			{/* <motion.div
@@ -216,7 +214,7 @@ const Ecosystem = () => {
 						title='Making Bounties Social and Rewarding'
 					/>
 				</Link>
-				<Link href='#ecosystem'>
+				<Link href='/products/treasurease'>
 					<Card
 						cardName='Treasure-Ease'
 						title='Simplifying treasury management and invoicing in Web3 Ecosystem'
@@ -236,7 +234,7 @@ const Ecosystem = () => {
 						title='Making Bounties Social and Rewarding'
 					/>
 				</Link>
-				<Link href='#ecosystem'>
+				<Link href='/products/treasurease'>
 					<CardMb
 						cardName='Treasure-Ease'
 						title='Simplifying treasury management and invoicing in Web3 Ecosystem'
