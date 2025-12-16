@@ -64,7 +64,7 @@ const Houses = ({ Data = [] }: any) => {
 			backgroundColor: 'rgba(256,256,256, 1)',
 			boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.3)',
 			transition: {
-				type: 'spring',
+				type: 'spring' as const,
 				duration: 1
 			}
 		},
@@ -79,7 +79,7 @@ const Houses = ({ Data = [] }: any) => {
 			zIndex: '4',
 			boxShadow: 'unset',
 			transition: {
-				type: 'spring',
+				type: 'spring' as const,
 				duration: 1
 			}
 		},
@@ -94,7 +94,7 @@ const Houses = ({ Data = [] }: any) => {
 			zIndex: '3',
 			boxShadow: 'unset',
 			transition: {
-				type: 'spring',
+				type: 'spring' as const,
 				duration: 1
 			}
 		},
@@ -109,7 +109,7 @@ const Houses = ({ Data = [] }: any) => {
 			zIndex: '2',
 			boxShadow: 'unset',
 			transition: {
-				type: 'spring',
+				type: 'spring' as const,
 				duration: 1
 			}
 		},
@@ -124,7 +124,7 @@ const Houses = ({ Data = [] }: any) => {
 			boxShadow: 'unset',
 			zIndex: '4',
 			transition: {
-				type: 'spring',
+				type: 'spring' as const,
 				duration: 1
 			}
 		},
@@ -139,7 +139,7 @@ const Houses = ({ Data = [] }: any) => {
 			boxShadow: 'unset',
 			zIndex: '3',
 			transition: {
-				type: 'spring',
+				type: 'spring' as const,
 				duration: 1
 			}
 		},
@@ -154,7 +154,7 @@ const Houses = ({ Data = [] }: any) => {
 			boxShadow: 'unset',
 			zIndex: '2',
 			transition: {
-				type: 'spring',
+				type: 'spring' as const,
 				duration: 1
 			}
 		},
@@ -170,75 +170,71 @@ const Houses = ({ Data = [] }: any) => {
 		}
 	};
 	return (
-		<motion.div className="flex flex-col items-center justify-center p-8 lg:p-24 pb-0 w-full overflow-hidden">
-			<h1 className="text-5xl font-semibold text-center lg:text-left w-full m-12 mb-24">
-				Houses On TownHall
-			</h1>
-			<motion.div className="relative size-40 lg:size-72">
+		<motion.div className='flex w-full flex-col items-center justify-center overflow-hidden p-8 pb-0 lg:p-24'>
+			<h1 className='m-12 mb-24 w-full text-center text-5xl font-semibold lg:text-left'>Houses On TownHall</h1>
+			<motion.div className='relative size-40 lg:size-72'>
 				<AnimatePresence initial={false}>
 					<motion.div
 						key={Left3Id}
 						variants={variants}
 						initial={FlowDirection ? 'center' : 'leftHidden'}
-						animate="left3"
+						animate='left3'
 						exit={'leftHidden'}
-						className="absolute size-40 lg:size-72 bg-center bg-cover -right-44 lg:right-auto bg-no-repeat rounded-full"
+						className='absolute -right-44 size-40 rounded-full bg-cover bg-center bg-no-repeat lg:right-auto lg:size-72'
 					></motion.div>
 					<motion.div
 						key={Left2Id}
 						variants={variants}
 						initial={FlowDirection ? 'center' : 'leftHidden'}
-						animate="left2"
+						animate='left2'
 						exit={'leftHidden'}
-						className="absolute size-40 lg:size-72 bg-center bg-cover -right-36 lg:right-auto bg-no-repeat rounded-full"
+						className='absolute -right-36 size-40 rounded-full bg-cover bg-center bg-no-repeat lg:right-auto lg:size-72'
 					></motion.div>
 					<motion.div
 						key={Left1Id}
 						variants={variants}
 						initial={FlowDirection ? 'center' : 'leftHidden'}
-						animate="left1"
+						animate='left1'
 						exit={'leftHidden'}
-						className="absolute size-40 lg:size-72 bg-center bg-cover -right-16 lg:right-auto bg-no-repeat rounded-full"
+						className='absolute -right-16 size-40 rounded-full bg-cover bg-center bg-no-repeat lg:right-auto lg:size-72'
 					></motion.div>
 					<motion.div
 						variants={variants}
 						key={CenterId}
 						initial={FlowDirection ? 'right' : 'left'}
-						animate="center"
-						className="absolute size-40 lg:size-72 bg-center bg-cover bg-no-repeat rounded-full"
+						animate='center'
+						className='absolute size-40 rounded-full bg-cover bg-center bg-no-repeat lg:size-72'
 					></motion.div>
 					<motion.div
 						key={Right1Id}
 						variants={variants}
 						initial={FlowDirection ? 'rightHidden' : 'center'}
-						animate="right1"
+						animate='right1'
 						exit={'rightHidden'}
-						className="absolute size-40 lg:size-72 bg-center text-right bg-cover right-16 lg:right-auto bg-no-repeat rounded-full"
+						className='absolute right-16 size-40 rounded-full bg-cover bg-center bg-no-repeat text-right lg:right-auto lg:size-72'
 					></motion.div>
 					<motion.div
 						key={Right2Id}
 						variants={variants}
 						initial={FlowDirection ? 'rightHidden' : 'center'}
-						animate="right2"
+						animate='right2'
 						exit={'rightHidden'}
-						className="absolute size-40 lg:size-72 bg-center text-right bg-cover right-36 lg:right-auto bg-no-repeat rounded-full"
+						className='absolute right-36 size-40 rounded-full bg-cover bg-center bg-no-repeat text-right lg:right-auto lg:size-72'
 					></motion.div>
 					<motion.div
 						key={Right3Id}
 						variants={variants}
 						initial={FlowDirection ? 'rightHidden' : 'center'}
-						animate="right3"
+						animate='right3'
 						exit={'rightHidden'}
-						className="absolute size-40 lg:size-72 bg-center text-right bg-cover right-44 lg:right-auto bg-no-repeat rounded-full"
+						className='absolute right-44 size-40 rounded-full bg-cover bg-center bg-no-repeat text-right lg:right-auto lg:size-72'
 					></motion.div>
 				</AnimatePresence>
 			</motion.div>
 
-			<h1 className="text-2xl sm:text-4xl font-semibold text-center w-full min-w-[60px] sm:min-w-[200px] m-12">
-				{Data[CenterId].Name}
-			</h1>
+			<h1 className='m-12 w-full min-w-[60px] text-center text-2xl font-semibold sm:min-w-[200px] sm:text-4xl'>{Data[CenterId].Name}</h1>
 
-			<div className=" flex justify-center items-center gap-2 sm:gap-8 z-10 ">
+			<div className='z-10 flex items-center justify-center gap-2 sm:gap-8'>
 				<motion.button
 					initial={{ opacity: 0, scale: 0 }}
 					animate={{ opacity: 1, scale: 1 }}
@@ -248,15 +244,15 @@ const Houses = ({ Data = [] }: any) => {
 					}}
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.8 }}
-					className="w-8 h-8 relative"
+					className='relative h-8 w-8'
 					onClick={prevBtn}
 				>
 					<Image
 						width={20}
 						height={20}
-						className="relative flex-[0_0_auto]"
-						alt="Frame"
-						src="/assets/arrowLeft.svg"
+						className='relative flex-[0_0_auto]'
+						alt='Frame'
+						src='/assets/arrowLeft.svg'
 					/>
 				</motion.button>
 				<SliderNavs
@@ -274,15 +270,15 @@ const Houses = ({ Data = [] }: any) => {
 					}}
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.8 }}
-					className="w-8 h-8 relative"
+					className='relative h-8 w-8'
 					onClick={nextBtn}
 				>
 					<Image
 						width={20}
 						height={20}
-						className="relative flex-[0_0_auto]"
-						alt="Frame"
-						src="/assets/arrowRight.svg"
+						className='relative flex-[0_0_auto]'
+						alt='Frame'
+						src='/assets/arrowRight.svg'
 					/>
 				</motion.button>
 			</div>
